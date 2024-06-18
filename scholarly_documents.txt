@@ -1,0 +1,169 @@
+Document 1:
+@misc{li2016visualizing,
+      title={Visualizing and Understanding Neural Models in NLP}, 
+      author={Jiwei Li and Xinlei Chen and Eduard Hovy and Dan Jurafsky},
+      year={2016},
+      eprint={1506.01066},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
+}
+
+Document 2:
+@misc{vaswani2023attention,
+      title={Attention Is All You Need}, 
+      author={Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin},
+      year={2023},
+      eprint={1706.03762},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
+}
+
+Document 3:
+@misc{devlin2019bert,
+      title={BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding}, 
+      author={Jacob Devlin and Ming-Wei Chang and Kenton Lee and Kristina Toutanova},
+      year={2019},
+      eprint={1810.04805},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
+}
+
+Document 4:
+@misc{brown2020language,
+      title={Language Models are Few-Shot Learners}, 
+      author={Tom B. Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and Tom Henighan and Rewon Child and Aditya Ramesh and Daniel M. Ziegler and Jeffrey Wu and Clemens Winter and Christopher Hesse and Mark Chen and Eric Sigler and Mateusz Litwin and Scott Gray and Benjamin Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and Ilya Sutskever and Dario Amodei},
+      year={2020},
+      eprint={2005.14165},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
+}
+
+Document 5:
+@inproceedings{Mogadala2016BilingualWE,
+  title={Bilingual Word Embeddings from Parallel and Non-parallel Corpora for Cross-Language Text Classification},
+  author={Aditya Mogadala and Achim Rettinger},
+  booktitle={North American Chapter of the Association for Computational Linguistics},
+  year={2016},
+  url={https://api.semanticscholar.org/CorpusID:11661714}
+}
+
+Document 6:
+@misc{cho2014learning,
+      title={Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation}, 
+      author={Kyunghyun Cho and Bart van Merrienboer and Caglar Gulcehre and Dzmitry Bahdanau and Fethi Bougares and Holger Schwenk and Yoshua Bengio},
+      year={2014},
+      eprint={1406.1078},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
+}
+
+Document 7:
+@misc{sutskever2014sequence,
+      title={Sequence to Sequence Learning with Neural Networks}, 
+      author={Ilya Sutskever and Oriol Vinyals and Quoc V. Le},
+      year={2014},
+      eprint={1409.3215},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
+}
+
+Document 8:
+@inproceedings{peters-etal-2018-deep,
+    title = "Deep Contextualized Word Representations",
+    author = "Peters, Matthew E.  and
+      Neumann, Mark  and
+      Iyyer, Mohit  and
+      Gardner, Matt  and
+      Clark, Christopher  and
+      Lee, Kenton  and
+      Zettlemoyer, Luke",
+    editor = "Walker, Marilyn  and
+      Ji, Heng  and
+      Stent, Amanda",
+    booktitle = "Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)",
+    month = jun,
+    year = "2018",
+    address = "New Orleans, Louisiana",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N18-1202",
+    doi = "10.18653/v1/N18-1202",
+    pages = "2227--2237",
+    abstract = "We introduce a new type of deep contextualized word representation that models both (1) complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses vary across linguistic contexts (i.e., to model polysemy). Our word vectors are learned functions of the internal states of a deep bidirectional language model (biLM), which is pre-trained on a large text corpus. We show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including question answering, textual entailment and sentiment analysis. We also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.",
+}
+
+Document 9:
+@article{conneau2019unsupervised,
+  title={Unsupervised cross-lingual representation learning at scale},
+  author={Conneau, Alexis and Khandelwal, Kartikay and Goyal, Naman and Chaudhary, Vishrav and Wenzek, Guillaume and Guzm{\'a}n, Francisco and Grave, Edouard and Ott, Myle and Zettlemoyer, Luke and Stoyanov, Veselin},
+  journal={arXiv preprint arXiv:1911.02116},
+  year={2019}
+}
+
+Document 10:
+@inproceedings{gehring-etal-2017-convolutional,
+    title = "A Convolutional Encoder Model for Neural Machine Translation",
+    author = "Gehring, Jonas  and
+      Auli, Michael  and
+      Grangier, David  and
+      Dauphin, Yann",
+    editor = "Barzilay, Regina  and
+      Kan, Min-Yen",
+    booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P17-1012",
+    doi = "10.18653/v1/P17-1012",
+    pages = "123--135",
+    abstract = "The prevalent approach to neural machine translation relies on bi-directional LSTMs to encode the source sentence. We present a faster and simpler architecture based on a succession of convolutional layers. This allows to encode the source sentence simultaneously compared to recurrent networks for which computation is constrained by temporal dependencies. On WMT{'}16 English-Romanian translation we achieve competitive accuracy to the state-of-the-art and on WMT{'}15 English-German we outperform several recently published results. Our models obtain almost the same accuracy as a very deep LSTM setup on WMT{'}14 English-French translation. We speed up CPU decoding by more than two times at the same or higher accuracy as a strong bi-directional LSTM.",
+}
+
+Document 11:
+@misc{zhang2016characterlevel,
+      title={Character-level Convolutional Networks for Text Classification}, 
+      author={Xiang Zhang and Junbo Zhao and Yann LeCun},
+      year={2016},
+      eprint={1509.01626},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.LG' full_name='Machine Learning' is_active=True alt_name=None in_archive='cs' is_general=False description='Papers on all aspects of machine learning research (supervised, unsupervised, reinforcement learning, bandit problems, and so on) including also robustness, explanation, fairness, and methodology. cs.LG is also an appropriate primary category for applications of machine learning methods.'}
+}
+
+Document 12:
+@misc{tai2015improved,
+      title={Improved Semantic Representations From Tree-Structured Long Short-Term Memory Networks}, 
+      author={Kai Sheng Tai and Richard Socher and Christopher D. Manning},
+      year={2015},
+      eprint={1503.00075},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
+}
+
+Document 13:
+@misc{bahdanau2016neural,
+      title={Neural Machine Translation by Jointly Learning to Align and Translate}, 
+      author={Dzmitry Bahdanau and Kyunghyun Cho and Yoshua Bengio},
+      year={2016},
+      eprint={1409.0473},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
+}
+
+Document 14:
+@misc{conneau2018word,
+      title={Word Translation Without Parallel Data}, 
+      author={Alexis Conneau and Guillaume Lample and Marc'Aurelio Ranzato and Ludovic Denoyer and Hervé Jégou},
+      year={2018},
+      eprint={1710.04087},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
+}
+
+Document 15:
+@inproceedings{benotti2022ethics,
+  title={Ethics consideration sections in natural language processing papers},
+  author={Benotti, Luciana and Blackburn, Patrick},
+  booktitle={2022 Conference on Empirical Methods in Natural Language Processing, EMNLP 2022},
+  pages={4509--4516},
+  year={2022}
+}
