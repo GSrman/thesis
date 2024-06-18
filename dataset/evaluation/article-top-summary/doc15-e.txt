@@ -1,0 +1,8 @@
+- Bias: The paper does not explicitly discuss bias, but it examines ethical considerations in ACL 2021
+papers.
+- Privacy: No mention of privacy issues in the abstract or discussion.
+- Transparency: The authors classify and present their findings on ethics consideration sections
+transparently.
+- Dual Use: Not discussed within the provided text extract.
+- Country differences: The paper addresses country differences in ECSs by comparing percentages from
+different countries at ACL 2021.

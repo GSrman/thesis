@@ -1,0 +1,16 @@
+1. Ethical Considerations:
+   - Bias and Fairness: The methods introduced must ensure fair representation of languages without any bias
+towards high-resource or low-resource languages.
+   - Privacy: Any shared data used for training should be anonymized to protect user privacy, especially when
+dealing with label or class aligned non-parallel document corpora in different languages.
+
+2. Ethical Considerations:
+   - Dual Use: Researchers must consider the potential dual use of bilingual word embeddings and ensure that they
+are not used for malicious purposes such as creating biased algorithms or misinformation campaigns.
+
+3. Ethical Considerations:
+   - Accessibility: The research should strive to make advancements in text classification accessible across
+different languages, especially those with less representation, to promote inclusivity and diversity.
+
+4. Transparency: Researchers must provide clear documentation about the data sources, methods used, potential
+biases, and limitations of their models to ensure transparency and reproducibinas ethical research practices.

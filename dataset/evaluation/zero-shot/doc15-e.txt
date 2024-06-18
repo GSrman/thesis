@@ -1,0 +1,35 @@
+- **Bias and Fairness**: The paper examines the inclusion of ethical
+considerations sections (ECSs) in ACL 2021 papers, but there's no
+explicit mention of bias or fairness within those sections; therefore,
+this aspect is not discussed.
+
+- **Privacy**: Privacy concerns are likely addressed within ECSs as
+they relate to sensitive data and tasks mentioned in the abstract.
+However, specific details on how privacy issues were handled are not
+provided in the text.
+
+- **Transparency**: The authors highlight transparency by discussing
+the contents of ethical consideration sections and comparing them
+across different tracks and countries. There is no explicit mention of
+transparency standards or practices within ECSs, though it can be
+inferred from the overall approach to research ethics disclosure.
+
+- **Dual Use**: The concept of dual use (applications that could have
+both beneficial and harmful outcomes) may implicitly be addressed in
+ECSs related to sensitive tasks or data; however, no explicit
+discussion on dual use is mentioned in the abstract.
+
+- **Accessibility**: While accessibility is not directly discussed,
+ethical considerations sections could encompass topics around making
+research findings and methodologies accessible to a wider audience
+including those with disabilities.
+
+- **Data Collection**: The paper classifies papers based on their
+coverage of ethical issues concerning sensitive data and vulnerable
+groups affected by the research, but there is no explicit focus on how
+they handle the collection or use of such data in ECSs.
+
+
+The paper does not provide a detailed breakdown of these aspects
+within its scope, focusing more on the prevalence, content, and
+obstacles related to ethical consideration sections (ECSs) in ACL 2enas

@@ -1,0 +1,12 @@
+Bias and fairness:
+Not explicitly discussed.
+Privacy:
+No discussion on privacy concerns related to data collection or model deployment.
+Transparency:
+The paper provides transparency by detailing the methodology and objectives of the BERT model.
+Dual Use:
+No mention of potential dual-use implications.
+Accessibility:
+The availability of code and pre-trained models on GitHub enhances accessibility for researchers and developers.
+Data collection:
+Data collection methods and associated ethical considerations are not addressed in the discussed segments of the paper.

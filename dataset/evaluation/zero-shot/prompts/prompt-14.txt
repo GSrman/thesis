@@ -1,0 +1,80 @@
+For the following research paper segments, make a short bulletpoint summary of the following ethical aspects: Bias and fairness, Privacy, Transparency, Dual Use, Accessibility, Data collection. If an aspect is not discussed, say so.
+
+ABSTRACT
+State-of-the-art methods for learning cross-lingual word embeddings have relied
+on bilingual dictionaries or parallel corpora. Recent studies showed that the need
+for parallel data supervision can be alleviated with character-level information.
+While these methods showed encouraging results, they are not on par with their
+supervised counterparts and are limited to pairs of languages sharing a common
+alphabet. In this work, we show that we can build a bilingual dictionary between
+two languages without using any parallel corpora, by aligning monolingual word
+embedding spaces in an unsupervised way. Without using any character information, our model even outperforms existing supervised methods on cross-lingual
+tasks for some language pairs. Our experiments demonstrate that our method
+works very well also for distant language pairs, like English-Russian or EnglishChinese. We finally describe experiments on the English-Esperanto low-resource
+language pair, on which there only exists a limited amount of parallel data, to show
+the potential impact of our method in fully unsupervised machine translation. Our
+code, embeddings and dictionaries are publicly available1.
+ INTRODUCTION
+Most successful methods for learning distributed representations of words (e.g. Mikolov et al.
+(2013c;a); Pennington et al. (2014); Bojanowski et al. (2017)) rely on the distributional hypothesis of Harris (1954), which states that words occurring in similar contexts tend to have similar
+meanings. Levy & Goldberg (2014) show that the skip-gram with negative sampling method of
+Mikolov et al. (2013c) amounts to factorizing a word-context co-occurrence matrix, whose entries
+are the pointwise mutual information of the respective word and context pairs. Exploiting word cooccurrence statistics leads to word vectors that reflect the semantic similarities and dissimilarities:
+similar words are close in the embedding space and conversely.
+Mikolov et al. (2013b) first noticed that continuous word embedding spaces exhibit similar structures
+across languages, even when considering distant language pairs like English and Vietnamese. They
+proposed to exploit this similarity by learning a linear mapping from a source to a target embedding
+space. They employed a parallel vocabulary of five thousand words as anchor points to learn this
+mapping and evaluated their approach on a word translation task. Since then, several studies aimed
+at improving these cross-lingual word embeddings (Faruqui & Dyer (2014); Xing et al. (2015);
+Lazaridou et al. (2015); Ammar et al. (2016); Artetxe et al. (2016); Smith et al. (2017)), but they all
+rely on bilingual word lexicons.
+Recent attempts at reducing the need for bilingual supervision (Smith et al., 2017) employ identical
+character strings to form a parallel vocabulary. The iterative method of Artetxe et al. (2017) gradually aligns embedding spaces, starting from a parallel vocabulary of aligned digits. These methods
+are however limited to similar languages sharing a common alphabet, such as European languages.
+Some recent methods explored distribution-based approach (Cao et al., 2016) or adversarial training
+Zhang et al. (2017b) to obtain cross-lingual word embeddings without any parallel data. While these
+approaches sound appealing, their performance is significantly below supervised methods. To sum
+up, current methods have either not reached competitive performance, or they still require parallel
+data, such as aligned corpora (Gouws et al., 2015; Vulic & Moens, 2015) or a seed parallel lexicon
+(Duong et al., 2016).
+In this paper, we introduce a model that either is on par, or outperforms supervised state-of-the-art
+methods, without employing any cross-lingual annotated data. We only use two large monolingual
+corpora, one in the source and one in the target language. Our method leverages adversarial training
+to learn a linear mapping from a source to a target space and operates in two steps. First, in a twoplayer game, a discriminator is trained to distinguish between the mapped source embeddings and
+the target embeddings, while the mapping (which can be seen as a generator) is jointly trained to fool
+the discriminator. Second, we extract a synthetic dictionary from the resulting shared embedding
+space and fine-tune the mapping with the closed-form Procrustes solution from Schonemann (1966). ¨
+Since the method is unsupervised, cross-lingual data can not be used to select the best model. To
+overcome this issue, we introduce an unsupervised selection metric that is highly correlated with the
+mapping quality and that we use both as a stopping criterion and to select the best hyper-parameters.
+In summary, this paper makes the following main contributions:
+• We present an unsupervised approach that reaches or outperforms state-of-the-art supervised approaches on several language pairs and on three different evaluation tasks, namely
+word translation, sentence translation retrieval, and cross-lingual word similarity. On
+a standard word translation retrieval benchmark, using 200k vocabularies, our method
+reaches 66.2% accuracy on English-Italian while the best supervised approach is at 63.7%.
+• We introduce a cross-domain similarity adaptation to mitigate the so-called hubness problem (points tending to be nearest neighbors of many points in high-dimensional spaces). It
+is inspired by the self-tuning method from Zelnik-manor & Perona (2005), but adapted to
+our two-domain scenario in which we must consider a bi-partite graph for neighbors. This
+approach significantly improves the absolute performance, and outperforms the state of the
+art both in supervised and unsupervised setups on word-translation benchmarks.
+• We propose an unsupervised criterion that is highly correlated with the quality of the mapping, that can be used both as a stopping criterion and to select the best hyper-parameters.
+• We release high-quality dictionaries for 12 oriented languages pairs, as well as the corresponding supervised and unsupervised word embeddings.
+• We demonstrate the effectiveness of our method using an example of a low-resource language pair where parallel corpora are not available (English-Esperanto) for which our
+method is particularly suited.
+The paper is organized as follows. Section 2 describes our unsupervised approach with adversarial
+training and our refinement procedure. We then present our training procedure with unsupervised
+model selection in Section 3. We report in Section 4 our results on several cross-lingual tasks for
+several language pairs and compare our approach to supervised methods. Finally, we explain how
+our approach differs from recent related work on learning cross-lingual word embeddings.
+CONCLUSION
+In this work, we show for the first time that one can align word embedding spaces without any
+cross-lingual supervision, i.e., solely based on unaligned datasets of each language, while reaching
+or outperforming the quality of previous supervised approaches in several cases. Using adversarial
+training, we are able to initialize a linear mapping between a source and a target space, which we
+also use to produce a synthetic parallel dictionary. It is then possible to apply the same techniques
+proposed for supervised techniques, namely a Procrustean optimization. Two key ingredients contribute to the success of our approach: First we propose a simple criterion that is used as an effective
+unsupervised validation metric. Second we propose the similarity measure CSLS, which mitigates
+the hubness problem and drastically increases the word translation accuracy. As a result, our approach produces high-quality dictionaries between different pairs of languages, with up to 83.3% on
+the Spanish-English word translation task. This performance is on par with supervised approaches.
+Our method is also effective on the English-Esperanto pair, thereby showing that it works for lowresource language pairs, and can be used as a first step towards unsupervised machine translation.

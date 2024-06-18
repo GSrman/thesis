@@ -1,0 +1,22 @@
+This research paper introduces an innovative approach to align word embedding spaces without requiring any
+cross-lingual annotated data (i.e., parallel corpora). The method utilizes two large monolingual corpora
+from each language and employs adversarial training, a synthetic dictionary generation, and Procrustes
+solution for refinement. It reaches or surpasses the performance of state-of-the-art supervised methods in
+several cross-lingual tasks such as word translation, sentence translation retrieval, and cross-lingual word
+similarity. Additionally, it introduces an unsupervised selection metric highly correlated with the mapping
+quality for model evaluation and hyperparameter tuning.
+
+Key Contributions:
+
+1. The proposed method achieves competitive performance on several language pairs compared to supervised
+approaches without utilizing any cross-lingual data, solely relying on monolingual corpora from each
+language.
+2. An unsupervised criterion for model selection is introduced and demonstrates high correlation with the
+mapping quality.
+3. The researchers present a cross-domain similarity adaptation to address the hubness problem (points
+tending to be nearest neighbors of many points in high-dimensional spaces), improving performance
+significantly compared to previous approaches, both supervised and unsupervised.
+4. High-quality dictionaries for 12 language pairs are provided along with corresponding supervised and
+unsupervised word embeddings.
+5. The method's effectiveness is validated on an English-Esperanto language pair where parallel corpora are
+not available, showcasing its applicability to low-resource languages.

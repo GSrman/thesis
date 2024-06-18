@@ -1,0 +1,21 @@
+Bias and fairness:
+
+No specific discussion on bias and fairness in the research paper segments provided.
+Privacy:
+
+Mentioned in the context of papers working with sensitive data or tasks, where authors are encouraged to discuss privacy concerns.
+Potential harm mentioned regarding over-generalizations of empirical results leading to privacy concerns.
+Transparency:
+
+Encouraged through the discussion of ethical impact in papers, with authors given extra space for broader impact statements.
+Transparency regarding the inclusion of an ethics consideration section (ECS) in papers is assessed.
+Dual Use:
+
+No specific discussion on dual use in the research paper segments provided.
+Accessibility:
+
+Not explicitly discussed in the provided segments.
+Data collection:
+
+Mentioned in the context of conducting a manual classification of ethical consideration sections for ACL 2021 papers.
+Noteworthy that papers are classified based on the ethical issues covered, including research benefits, potential harms, and vulnerable groups affected.

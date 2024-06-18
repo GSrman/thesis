@@ -1,0 +1,81 @@
+For the following research paper segments, make a short bulletpoint summary of the following ethical aspects: Bias and fairness, Privacy, Transparency, Dual Use, Accessibility, Data collection. If an aspect is not discussed, say so.
+
+Abstract
+The prevalent approach to neural machine
+translation relies on bi-directional LSTMs
+to encode the source sentence. We present
+a faster and simpler architecture based on a
+succession of convolutional layers. This allows to encode the source sentence simultaneously compared to recurrent networks for
+which computation is constrained by temporal dependencies. On WMT’16 EnglishRomanian translation we achieve competitive accuracy to the state-of-the-art and
+on WMT’15 English-German we outperform several recently published results. Our
+models obtain almost the same accuracy
+as a very deep LSTM setup on WMT’14
+English-French translation. We speed up
+CPU decoding by more than two times at
+the same or higher accuracy as a strong bidirectional LSTM.1
+Introduction
+Neural machine translation (NMT) is an end-to-end
+approach to machine translation (Sutskever et al.,
+2014). The most successful approach to date encodes the source sentence with a bi-directional recurrent neural network (RNN) into a variable length
+representation and then generates the translation
+left-to-right with another RNN where both components interface via a soft-attention mechanism
+(Bahdanau et al., 2015; Luong et al., 2015a; Bradbury and Socher, 2016; Sennrich et al., 2016a).
+Recurrent networks are typically parameterized as
+long short term memory networks (LSTM; Hochreiter et al. 1997) or gated recurrent units (GRU; Cho
+et al. 2014), often with residual or skip connections (Wu et al., 2016; Zhou et al., 2016) to enable
+stacking of several layers (§2).
+There have been several attempts to use convolutional encoder models for neural machine trans1The source code will be availabe at https://github.
+com/facebookresearch/fairseq
+lation in the past but they were either only applied to rescoring n-best lists of classical systems
+(Kalchbrenner and Blunsom, 2013) or were not
+competitive to recurrent alternatives (Cho et al.,
+2014a). This is despite several attractive properties
+of convolutional networks. For example, convolutional networks operate over a fixed-size window of
+the input sequence which enables the simultaneous
+computation of all features for a source sentence.
+This contrasts to RNNs which maintain a hidden
+state of the entire past that prevents parallel computation within a sequence.
+A succession of convolutional layers provides a
+shorter path to capture relationships between elements of a sequence compared to RNNs.2 This also
+eases learning because the resulting tree-structure
+applies a fixed number of non-linearities compared
+to a recurrent neural network for which the number
+of non-linearities vary depending on the time-step.
+Because processing is bottom-up, all words undergo the same number of transformations, whereas
+for RNNs the first word is over-processed and the
+last word is transformed only once.
+In this paper we show that an architecture based
+on convolutional layers is very competitive to recurrent encoders. We investigate simple average pooling as well as parameterized convolutions as an alternative to recurrent encoders and enable very deep
+convolutional encoders by using residual connections (He et al., 2015; §3).
+We experiment on several standard datasets and
+compare our approach to variants of recurrent encoders such as uni-directional and bi-directional
+LSTMs. On WMT’16 English-Romanian translation we achieve accuracy that is very competitive
+to the current state-of-the-art result. We perform
+competitively on WMT’15 English-German, and
+nearly match the performance of the best WMT’14
+English-French system based on a deep LSTM
+setup when comparing on a commonly used subset
+of the training data (Zhou et al. 2016; §4, §5)
+ Conclusion
+We introduced a simple encoder model for neural machine translation based on convolutional networks. This approach is more parallelizable than
+recurrent networks and provides a shorter path to
+capture long-range dependencies in the source. We
+find it essential to use source position embeddings
+as well as different CNNs for attention score computation and conditional input aggregation.
+Our experiments show that convolutional encoders perform on par or better than baselines based
+on bi-directional LSTM encoders. In comparison
+to other recent work, our deep convolutional encoder is competitive to the best published results
+to date (WMT’16 English-Romanian) which are
+obtained with significantly more complex models
+(WMT’14 English-French) or stem from improvements that are orthogonal to our work (WMT’15
+English-German). Our architecture also leads to
+large generation speed improvements: translation
+models with our convolutional encoder can translate
+twice as fast as strong baselines with bi-directional
+recurrent encoders.
+Future work includes better training to enable
+faster convergence with the convolutional encoder
+to better leverage the higher processing speed. Our
+fast architecture is interesting for character level encoders where the input is significantly longer than
+for words. Also, we plan to investigate the effectiveness of our architecture on other sequence-tosequence tasks, e.g. summarization, constituency
+parsing, dialog modeling.

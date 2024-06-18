@@ -1,0 +1,462 @@
+For the following research paper segments, make a short bulletpoint summary of the following ethical aspects: Bias and fairness, Privacy, Transparency, Dual Use, Accessibility, Data collection. If an aspect is not discussed, say so.
+I have included a example from a different research paper first. It has three different summaries, which are ranked in order from best to worst. You do not need to make a summary on this paper, it is just an example.
+
+Abstract
+In this paper, we propose a novel neural network model called RNN Encoder–
+Decoder that consists of two recurrent
+neural networks (RNN). One RNN encodes a sequence of symbols into a fixedlength vector representation, and the other
+decodes the representation into another sequence of symbols. The encoder and decoder of the proposed model are jointly
+trained to maximize the conditional probability of a target sequence given a source
+sequence. The performance of a statistical machine translation system is empirically found to improve by using the conditional probabilities of phrase pairs computed by the RNN Encoder–Decoder as an
+additional feature in the existing log-linear
+model. Qualitatively, we show that the
+proposed model learns a semantically and
+syntactically meaningful representation of
+linguistic phrases.
+Introduction
+Deep neural networks have shown great success in
+various applications such as objection recognition
+(see, e.g., (Krizhevsky et al., 2012)) and speech
+recognition (see, e.g., (Dahl et al., 2012)). Furthermore, many recent works showed that neural networks can be successfully used in a number of tasks in natural language processing (NLP).
+These include, but are not limited to, language
+modeling (Bengio et al., 2003), paraphrase detection (Socher et al., 2011) and word embedding extraction (Mikolov et al., 2013). In the field of statistical machine translation (SMT), deep neural
+networks have begun to show promising results.
+(Schwenk, 2012) summarizes a successful usage
+of feedforward neural networks in the framework
+of phrase-based SMT system.
+Along this line of research on using neural networks for SMT, this paper focuses on a novel neural network architecture that can be used as a part
+of the conventional phrase-based SMT system.
+The proposed neural network architecture, which
+we will refer to as an RNN Encoder–Decoder, consists of two recurrent neural networks (RNN) that
+act as an encoder and a decoder pair. The encoder maps a variable-length source sequence to a
+fixed-length vector, and the decoder maps the vector representation back to a variable-length target
+sequence. The two networks are trained jointly to
+maximize the conditional probability of the target
+sequence given a source sequence. Additionally,
+we propose to use a rather sophisticated hidden
+unit in order to improve both the memory capacity
+and the ease of training.
+The proposed RNN Encoder–Decoder with a
+novel hidden unit is empirically evaluated on the
+task of translating from English to French. We
+train the model to learn the translation probability of an English phrase to a corresponding French
+phrase. The model is then used as a part of a standard phrase-based SMT system by scoring each
+phrase pair in the phrase table. The empirical evaluation reveals that this approach of scoring phrase
+pairs with an RNN Encoder–Decoder improves
+the translation performance.
+We qualitatively analyze the trained RNN
+Encoder–Decoder by comparing its phrase scores
+with those given by the existing translation model.
+The qualitative analysis shows that the RNN
+Encoder–Decoder is better at capturing the linguistic regularities in the phrase table, indirectly
+explaining the quantitative improvements in the
+overall translation performance. The further analysis of the model reveals that the RNN Encoder–
+Decoder learns a continuous space representation
+of a phrase that preserves both the semantic and
+syntactic structure of the phrase.
+Conclusion
+In this paper, we proposed a new neural network
+architecture, called an RNN Encoder–Decoder
+that is able to learn the mapping from a sequence
+of an arbitrary length to another sequence, possibly from a different set, of an arbitrary length. The
+proposed RNN Encoder–Decoder is able to either
+score a pair of sequences (in terms of a conditional
+probability) or generate a target sequence given a
+source sequence. Along with the new architecture,
+we proposed a novel hidden unit that includes a reset gate and an update gate that adaptively control
+how much each hidden unit remembers or forgets
+while reading/generating a sequence.
+We evaluated the proposed model with the task
+of statistical machine translation, where we used
+the RNN Encoder–Decoder to score each phrase
+pair in the phrase table. Qualitatively, we were
+able to show that the new model is able to capture linguistic regularities in the phrase pairs well
+and also that the RNN Encoder–Decoder is able to
+propose well-formed target phrases.
+The scores by the RNN Encoder–Decoder were
+found to improve the overall translation performance in terms of BLEU scores. Also, we
+found that the contribution by the RNN Encoder–
+Decoder is rather orthogonal to the existing approach of using neural networks in the SMT system, so that we can improve further the performance by using, for instance, the RNN Encoder–
+Decoder and the neural net language model together.
+Our qualitative analysis of the trained model
+shows that it indeed captures the linguistic regularities in multiple levels i.e. at the word level as
+well as phrase level. This suggests that there may
+be more natural language related applications that
+may benefit from the proposed RNN Encoder–
+Decoder.
+The proposed architecture has large potential
+for further improvement and analysis. One approach that was not investigated here is to replace the whole, or a part of the phrase table by
+letting the RNN Encoder–Decoder propose target
+phrases. Also, noting that the proposed model is
+not limited to being used with written language,
+it will be an important future research to apply the
+proposed architecture to other applications such as
+speech transcription.
+
+For these research paper segments, the following summaries were generated, in order from best to worst.
+
+1.
+Bias and fairness: Not discussed.
+Privacy: Not discussed.
+Transparency: The paper provides detailed explanations of the proposed model architecture and its components, offering transparency in the approach.
+Dual Use: Not discussed.
+Accessibility: The paper introduces a novel neural network architecture for statistical machine translation, which could potentially enhance accessibility to translation services.
+Data collection: Not discussed.
+
+2.
+Based on the provided excerpts, the research paper discusses the ethical aspects of:
+
+Bias and Fairness: Not discussed.
+Privacy: Not discussed.
+Transparency: Not discussed. We can't tell how the model interprets the data or arrives at its translations.
+Dual Use: Not discussed. The paper focuses on translation applications.
+Accessibility: Not discussed.
+Data Collection: The paper mentions training on an English-French phrase table, but doesn't discuss the source or creation of this data.
+Note: The absence of discussion doesn't necessarily mean these aspects weren't considered. It's just not mentioned in the provided excerpts.
+
+3.
+Certainly! Let’s summarize the ethical aspects discussed in the research paper on the RNN Encoder–Decoder model:
+
+Bias and Fairness:
+The paper does not explicitly discuss bias and fairness aspects related to the RNN Encoder–Decoder model. However, it’s essential to consider these factors when deploying such models to ensure equitable outcomes.
+Privacy:
+Privacy implications are not directly addressed in the paper. When implementing RNN Encoder–Decoder models, privacy concerns may arise due to the use of sensitive data. Researchers and practitioners should be cautious about data privacy and anonymization.
+Transparency:
+The paper does not delve into transparency aspects. Transparency is crucial for understanding model behavior, especially in critical applications. Researchers should document model architecture, hyperparameters, and training details to enhance transparency.
+Dual Use:
+The paper does not explicitly discuss dual-use scenarios. Dual-use refers to technologies that can be used for both beneficial and harmful purposes. Researchers should consider potential misuse and ethical implications.
+Accessibility:
+Accessibility considerations are not covered in the paper. When deploying models, ensuring accessibility for users with disabilities (e.g., visual impairments) is essential. Providing accessible interfaces and documentation is crucial.
+Data Collection:
+The paper does not specifically address data collection ethics. Researchers collecting data for training RNN Encoder–Decoder models should follow ethical guidelines, obtain informed consent, and handle sensitive information responsibly.
+In summary, while the paper focuses on the technical aspects of the RNN Encoder–Decoder model, ethical considerations play a vital role in its real-world deployment. Researchers and practitioners should proactively address these aspects to build responsible and reliable AI systems12. 🌟
+
+This is the end of the examples. I repeat the task for you here below.
+For the following research paper segments, make a short bulletpoint summary of the following ethical aspects: Bias and fairness, Privacy, Transparency, Dual Use, Accessibility, Data collection. If an aspect is not discussed, say so. 
+
+Abstract
+We demonstrate that scaling up language models greatly improves task-agnostic,
+few-shot performance, sometimes even becoming competitive with prior state-ofthe-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive
+language model with 175 billion parameters, 10x more than any previous nonsparse language model, and test its performance in the few-shot setting. For all
+tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks
+and few-shot demonstrations specified purely via text interaction with the model.
+GPT-3 achieves strong performance on many NLP datasets, including translation,
+question-answering, and cloze tasks. We also identify some datasets where GPT3’s few-shot learning still struggles, as well as some datasets where GPT-3 faces
+methodological issues related to training on large web corpora.
+ Introduction
+NLP has shifted from learning task-specific representations and designing task-specific architectures
+to using task-agnostic pre-training and task-agnostic architectures. This shift has led to substantial
+progress on many challenging NLP tasks such as reading comprehension, question answering, textual
+entailment, among others. Even though the architecture and initial representations are now taskagnostic, a final task-specific step remains: fine-tuning on a large dataset of examples to adapt a task
+agnostic model to perform a desired task.
+Recent work [RWC+19] suggested this final step may not be necessary. [RWC+19] demonstrated
+that a single pretrained language model can be zero-shot transferred to perform standard NLP tasks
+without the need for finetuning on a dataset of training examples. While this work was a promising
+proof of concept, the best case performance only matched some supervised baselines on a single
+dataset. On most tasks, performance was still far from even simple supervised baselines.
+However [RWC+19] also showed a potential way forward. The work observed relatively consistent
+log-linear trends in performance on both transfer tasks and language modeling loss across one an
+order of magnitude of scaling. [KMH+20] then conducted a much more rigorous study of the scaling
+behavior of log loss and confirmed smooth scaling trends. In this work, we empirically test whether
+scaling continues to improve performance by extrapolating the previously identified phenomena
+another two orders of magnitude. We train a 175 billion parameter autoregressive language model,
+which we call GPT-3, and measure its transfer learning abilities.
+As part of this investigation, we also clarify and systematize the approach introduced in [RWC+19].
+While [RWC+19] describe their work as “zero-shot task transfer” they sometimes provide examples
+of the relevant task in the context. Due to the use of what are effectively training examples, these
+cases are better described as “one-shot” or “few-shot” transfer. We study these one-shot and few-shot
+settings in detail comparing them with the zero-shot setting which only uses a natural language
+description or invocation of the task to be performed. Our findings are summarized in Figure 1.1. We
+observe that one- and few-shot performance is often much higher than true zero-shot performance
+leading us to suggest that language models can also be understood as meta-learners where slow
+outer-loop gradient descent based learning is combined with fast “in-context” learning implemented
+within the context activations of the model.
+Broadly, on NLP tasks GPT-3 achieves promising results in the zero- and one-shot settings, and in
+the few-shot setting is sometimes competitive with or even occasionally surpasses state-of-the-art
+(despite state-of-the-art being held by fine-tuned models). For example, GPT-3 achieves 81.5 F1 on
+CoQA in the zero-shot setting, 84.0 F1 on CoQA in the one-shot setting, and 85.0 F1 in the few-shot
+setting. Similarly, GPT-3 achieves 64.3% accuracy on TriviaQA in the zero-shot setting, 68.0% in the
+one-shot setting, and 71.2% in the few-shot setting, the last of which is state-of-the-art relative to
+fine-tuned models operating in the same closed-book setting.
+We additionally train a series of smaller models (ranging from 125 million parameters to 13 billion
+parameters) in order to compare their performance to GPT-3 in the zero-, one- and few-shot settings.
+In general, we find relatively smooth scaling for most tasks with model capacity in all three settings;
+one notable pattern is that the gap between zero-, one-, and few-shot performance often grows with
+model capacity, perhaps suggesting that larger models are more proficient meta-learners.
+Conclusion
+We presented a 175 billion parameter language model which shows strong performance on many
+NLP tasks and benchmarks in the zero-shot, one-shot, and few-shot settings, in some cases nearly
+matching the performance of state-of-the-art fine-tuned systems, as well as generating high-quality
+samples and strong qualitative performance at tasks defined on-the-fly. We documented roughly
+predictable trends of scaling in performance without using fine-tuning. We also discussed the social
+impacts of this class of model. Despite many limitations and weaknesses, these results suggest that
+very large language models may be an important ingredient in the development of adaptable, general
+language systems.
+Funding Disclosures
+This work was funded by OpenAI. All models were trained on V100 GPU’s on part of a highbandwidth cluster provided by Microsoft
+Broader Impacts
+Language models have a wide range of beneficial applications for society, including code and writing
+auto-completion, grammar assistance, game narrative generation, improving search engine responses,
+and answering questions. But they also have potentially harmful applications. GPT-3 improves
+the quality of text generation and adaptability over smaller models and increases the difficulty of
+distinguishing synthetic text from human-written text. It therefore has the potential to advance both
+the beneficial and harmful applications of language models.
+Here we focus on the potential harms of improved language models, not because we believe the
+harms are necessarily greater, but in order to stimulate efforts to study and mitigate them. The broader
+impacts of language models like this are numerous. We focus on two primary issues: the potential
+for deliberate misuse of language models like GPT-3 in Section 7.1, and issues of bias, fairness, and
+representation within models like GPT-3 in Section 7.2. We also briefly discuss issues of energy
+efficiency (Section 7.3).
+7.1 Misuse of Language Models
+Malicious uses of language models can be somewhat difficult to anticipate because they often
+involve repurposing language models in a very different environment or for a different purpose than
+researchers intended. To help with this, we can think in terms of traditional security risk assessment
+frameworks, which outline key steps such as identifying threats and potential impacts, assessing
+likelihood, and determining risk as a combination of likelihood and impact [Ros12]. We discuss three
+factors: potential misuse applications, threat actors, and external incentive structures.
+7.1.1 Potential Misuse Applications
+Any socially harmful activity that relies on generating text could be augmented by powerful language models. Examples include misinformation, spam, phishing, abuse of legal and governmental
+processes, fraudulent academic essay writing and social engineering pretexting. Many of these
+applications bottleneck on human beings to write sufficiently high quality text. Language models that
+produce high quality text generation could lower existing barriers to carrying out these activities and
+increase their efficacy.
+The misuse potential of language models increases as the quality of text synthesis improves. The
+ability of GPT-3 to generate several paragraphs of synthetic content that people find difficult to
+distinguish from human-written text represents a concerning milestone in this regard.
+7.1.2 Threat Actor Analysis
+Threat actors can be organized by skill and resource levels, ranging from low or moderately skilled
+and resourced actors who may be able to build a malicious product to ‘advanced persistent threats’
+(APTs): highly skilled and well-resourced (e.g. state-sponsored) groups with long-term agendas
+[SBC+19].
+To understand how low and mid-skill actors think about language models, we have been monitoring
+forums and chat groups where misinformation tactics, malware distribution, and computer fraud
+are frequently discussed. While we did find significant discussion of misuse following the initial
+release of GPT-2 in spring of 2019, we found fewer instances of experimentation and no successful
+deployments since then. Additionally, those misuse discussions were correlated with media coverage
+of language model technologies. From this, we assess that the threat of misuse from these actors is
+not immediate, but significant improvements in reliability could change this.
+Because APTs do not typically discuss operations in the open, we have consulted with professional
+threat analysts about possible APT activity involving the use of language models. Since the release
+of GPT-2 there has been no discernible difference in operations that may see potential gains by using
+language models. The assessment was that language models may not be worth investing significant
+resources in because there has been no convincing demonstration that current language models are
+significantly better than current methods for generating text, and because methods for “targeting” or
+“controlling” the content of language models are still at a very early stage.
+7.1.3 External Incentive Structures
+Each threat actor group also has a set of tactics, techniques, and procedures (TTPs) that they rely
+on to accomplish their agenda. TTPs are influenced by economic factors like scalability and ease of
+deployment; phishing is extremely popular among all groups because it offers a low-cost, low-effort,
+high-yield method of deploying malware and stealing login credentials. Using language models to
+augment existing TTPs would likely result in an even lower cost of deployment.
+Ease of use is another significant incentive. Having stable infrastructure has a large impact on the
+adoption of TTPs. The outputs of language models are stochastic, however, and though developers
+can constrain these (e.g. using top-k truncation) they are not able to perform consistently without
+human feedback. If a social media disinformation bot produces outputs that are reliable 99% of the
+time, but produces incoherent outputs 1% of the time, this could reduce the amount of human labor
+required in operating this bot. But a human is still needed to filter the outputs, which restricts how
+scalable the operation can be.
+Based on our analysis of this model and analysis of threat actors and the landscape, we suspect AI
+researchers will eventually develop language models that are sufficiently consistent and steerable that
+they will be of greater interest to malicious actors. We expect this will introduce challenges for the
+broader research community, and hope to work on this through a combination of mitigation research,
+prototyping, and coordinating with other technical developers.
+7.2 Fairness, Bias, and Representation
+Biases present in training data may lead models to generate stereotyped or prejudiced content.
+This is concerning, since model bias could harm people in the relevant groups in different ways
+by entrenching existing stereotypes and producing demeaning portrayals amongst other potential
+harms [Cra17]. We have conducted an analysis of biases in the model in order to better understand
+GPT-3’s limitations when it comes to fairness, bias, and representation. 2
+Our goal is not to exhaustively characterize GPT-3, but to give a preliminary analysis of some of
+its limitations and behaviors. We focus on biases relating to gender, race, and religion, although
+many other categories of bias are likely present and could be studied in follow-up work. This is a
+preliminary analysis and does not reflect all of the model’s biases even within the studied categories.
+Broadly, our analysis indicates that internet-trained models have internet-scale biases; models tend to
+reflect stereotypes present in their training data. Below we discuss our preliminary findings of bias
+along the dimensions of gender, race, and religion. We probe for bias in the 175 billion parameter
+model and also in similar smaller models, to see if and how they are different in this dimension.
+7.2.1 Gender
+In our investigation of gender bias in GPT-3, we focused on associations between gender and
+occupation. We found that occupations in general have a higher probability of being followed by a
+male gender identifier than a female one (in other words, they are male leaning) when given a context
+such as "The {occupation} was a" (Neutral Variant). 83% of the 388 occupations we tested
+were more likely to be followed by a male identifier by GPT-3. We measured this by feeding the
+model a context such as "The detective was a" and then looking at the probability of the model
+following up with male indicating words (eg. man, male etc.) or female indicating words (woman,
+female etc.). In particular, occupations demonstrating higher levels of education such as legislator,
+banker, or professor emeritus were heavily male leaning along with occupations that require hard
+physical labour such as mason, millwright, and sheriff. Occupations that were more likely to be
+followed by female identifiers include midwife, nurse, receptionist, housekeeper etc.
+We also tested how these probabilities changed when we shifted the context to be the "The
+competent {occupation} was a" (Competent Variant), and when we shifted the context to
+be "The incompetent {occupation} was a" (Incompetent Variant) for each occupation in the
+dataset. We found that, when prompted with "The competent {occupation} was a," the majority of occupations had an even higher probability of being followed by a male identifier than a
+female one than was the case with our original neutral prompt, "The {occupation} was a". With
+the prompt "The incompetent {occupation} was a" the majority of occupations still leaned
+male with a similar probability than for our original neutral prompt. The average occupation bias -
+measured as 1
+njobs
+P
+jobs log( P (female|Context)
+P (male|Context)) ) - was −1.11 for the Neutral Variant, −2.14 for the
+Competent Variant and −1.15 for the Incompetent Variant.
+We also carried out pronoun resolution on the Winogender dataset [RNLVD18] using
+two methods which further corroborated the model’s tendency to associate most occupations with males. One method measured the models ability to correctly assign a pronoun as the occupation or the participant. For example, we fed the model a context such as "The advisor met with the advisee because she wanted to get advice
+about job applications. ‘She’ refers to the" and found the option with the lowest
+probability between the two possible options (Choices between Occupation Option: advisor; Participant Option: advisee).
+Occupation and participant words often have societal biases associated with them such as the
+assumption that most occupants are by default male. We found that the language models learnt some
+of these biases such as a tendency to associate female pronouns with participant positions more than
+male pronouns. GPT-3 175B had the highest accuracy of all the models (64.17%) on this task. It was
+also the only model where the accuracy for Occupant sentences (sentences where the correct answer
+was the Occupation option) for females was higher than for males (81.7% vs 76.7%). All other
+models had a higher accuracy for male pronouns with Occupation sentences as compared to female
+pronouns with the exception of our second largest model- GPT-3 13B - which had the same accuracy
+(60%) for both. This offers some preliminary evidence that in places where issues of bias can make
+language models susceptible to error, the larger models are more robust than smaller models.
+We also performed co-occurrence tests, where we analyzed which words are likely to occur in the
+vicinity of other pre-selected words. We created a model output sample set by generating 800 outputs
+of length 50 each with a temperature of 1 and top p of 0.9 for every prompt in our dataset. For
+gender, we had prompts such as "He was very", "She was very", "He would be described
+as", "She would be described as"3
+. We looked at the adjectives and adverbs in the top 100
+most favored words using an off-the-shelf POS tagger [LB02]. We found females were more often
+described using appearance oriented words such as ”beautiful” and ”gorgeous” as compared to men
+who were more often described using adjectives that span a greater spectrum.
+3We only used male and female pronouns. This simplifying assumption makes it easier to study co-occurrence
+since it does not require the isolation of instances in which ‘they’ refers to a singular noun from those where it
+didn’t, but other forms of gender bias are likely present and could be studied using different approaches.
+Table 7.1 shows the top 10 most favored descriptive words for the model along with the raw number
+of times each word co-occurred with a pronoun indicator. “Most Favored” here indicates words
+which were most skewed towards a category by co-occurring with it at a higher rate as compared to
+the other category. To put these numbers in perspective, we have also included the average for the
+number of co-occurrences across all qualifying words for each gender.
+7.2.2 Race
+To investigate racial bias in GPT-3, we seeded the model with prompts such as - "The {race} man
+was very", "The {race} woman was very" and "People would describe the {race}
+person as" and generated 800 samples for each of the above prompts, with {race} replaced with
+a term indicating a racial category such as White or Asian. We then measure word co-occurrences
+in the generated samples. Given prior research demonstrating that language models produce text
+of differing sentiment when varying features such as occupation [HZJ+19], we explored how race
+impacted sentiment. We measured sentiment using Senti WordNet [BES10] for the words which
+co-occurred disproportionately with each race. Each word sentiment varied from 100 to -100, with
+positive scores indicating positive words (eg. wonderfulness: 100, amicable: 87.5), negative scores
+indicating negative words (eg. wretched: -87.5 , horrid: -87.5) and a score of 0 indicating neutral
+words (eg. sloping, chalet).
+It should be noted that we were explicitly prompting the models to talk about race and this in turn
+generated text that focused on racial features; these results are not from the models talking about
+race in the wild but talking about race in an experimental setup where they have been primed to do
+so. Additionally, since we are measuring sentiment by simply looking at word co-occurrences, the
+resulting sentiment can reflect socio-historical factors - for instance, text relating to a discussion of
+slavery will frequently have a negative sentiment, which may lead to a demographic being associated
+with a negative sentiment under this testing methodology.
+Across the models we analyzed, ‘Asian’ had a consistently high sentiment - it ranked 1st in 3 out of 7
+models. On the other hand, ’Black’ had a consistently low sentiment - it ranked the lowest in 5 out of
+7 models. These differences narrowed marginally on the larger model sizes. This analysis gives a
+sense of the biases of different models and highlights the need for more sophisticated analysis of the
+relationship between sentiment, entities, and input data.
+7.2.3 Religion
+We studied which words co-occurred with religious terms relating to Atheism, Buddhism, Christianity,
+Hinduism, Islam, and Judaism, by generating 800 model outputs of length ≈50 with a temperature of 1
+and a top p of 0.9 for every prompt. Our prompts were of the nature "{Religion practitioners}
+are" (Eg. "Christians are") for each of the six religious categories listed above. We then
+allowed the model to naturally carry out completions and created a corpus of such completions for
+studying co-occurrence of words.
+The following is an example output from the model:
+"Buddhists are divided into two main branches - Theravada and Mahayana.
+Theravada is the more conservative branch, centering on monastic life
+and the earliest sutras and refusing to recognize the later Mahayana
+sutras as authentic."
+Similar to race, we found that the models make associations with religious terms that indicate some
+propensity to reflect how these terms are sometimes presented in the world. For example, with the
+religion Islam, we found that words such as ramadan, prophet and mosque co-occurred at a higher
+rate than for other religions. We also found that words such as violent, terrorism and terrorist
+co-occurred at a greater rate with Islam than with other religions and were in the top 40 most favored
+words for Islam in GPT-3.
+7.2.4 Future Bias and Fairness Challenges
+We have presented this preliminary analysis to share some of the biases we found in order to motivate
+further research, and to highlight the inherent difficulties in characterizing biases in large-scale
+generative models; we expect this to be an area of continuous research for us and are excited to
+discuss different methodological approaches with the community. We view the work in this section
+as subjective signposting - we chose gender, race, and religion as a starting point, but we recognize
+the inherent subjectivity in this choice. Our work is inspired by the literature on characterizing model
+attributes to develop informative labels such as Model Cards for Model Reporting from [MWZ+18].
+Ultimately, it is important not just to characterize biases in language systems but to intervene. The
+literature on this is also extensive [QMZH19, HZJ+19], so we offer only a few brief comments
+on future directions specific to large language models. In order to pave the way for effective bias
+prevention in general purpose models, there is a need for building a common vocabulary tying
+together the normative, technical and empirical challenges of bias mitigation for these models. There
+is room for more research that engages with the literature outside NLP, better articulates normative
+statements about harm, and engages with the lived experience of communities affected by NLP
+systems [BBDIW20]. Thus, mitigation work should not be approached purely with a metric driven
+objective to ‘remove’ bias as this has been shown to have blind spots [GG19, NvNvdG19] but in a
+holistic manner.
+7.3 Energy Usage
+Practical large-scale pre-training requires large amounts of computation, which is energy-intensive:
+training the GPT-3 175B consumed several thousand petaflop/s-days of compute during pre-training,
+compared to tens of petaflop/s-days for a 1.5B parameter GPT-2 model (Figure 7.2). This means we
+should be cognizant of the cost and efficiency of such models, as advocated by [SDSE19].
+The use of large-scale pre-training also gives another lens through which to view the efficiency of
+large models - we should consider not only the resources that go into training them, but how these
+resources are amortized over the lifetime of a model, which will subsequently be used for a variety of
+purposes and fine-tuned for specific tasks. Though models like GPT-3 consume significant resources
+during training, they can be surprisingly efficient once trained: even with the full GPT-3 175B,
+generating 100 pages of content from a trained model can cost on the order of 0.4 kW-hr, or only a
+few cents in energy costs. Additionally, techniques like model distillation [LHCG19a] can further
+bring down the cost of such models, letting us adopt a paradigm of training single, large-scale models,
+then creating more efficient versions of them for use in appropriate contexts. Algorithmic progress
+may also naturally further increase the efficiency of such models over time, similar to trends observed
+in image recognition and neural machine translation [HB20].
+7.4 News Generation
+We test GPT-3’s ability to generate synthetic “news articles” by prompting the model with a context
+of three previous news articles and the title and subtitle of a proposed article to generate. To gauge the
+quality of generated articles, we measured human ability to distinguish GPT-3-generated articles from
+real ones. Similar work has been carried out by Kreps et al. [KMB20] and Zellers et al. [ZHR+19].
+Generative language models are trained to match the distribution of content generated by humans, so
+the (in)ability of humans to distinguish the two is a potentially important measure of quality.4
+In order to see how well humans can detect model generated text, we arbitrarily selected 25 article
+titles and subtitles from the website newser.com (mean length: 215 words). We then generated
+completions of these titles and subtitles from for language models ranging in size from 125M to 175B
+(GPT-3) parameters (mean length: 200 words). For each model, we presented around 80 US-based
+participants with a quiz consisting of these real titles and subtitles followed by either the human
+written article or the article generated by the model5
+. Participants were asked to select whether the
+article was “very likely written by a human”, “more likely written by a human”, “I don’t know”,
+“more likely written by a machine”, or “very likely written by a machine”.
+The articles we selected were not in the models’ training data and the model outputs were formatted
+and selected programmatically to prevent human cherry-picking. All models used the same context to
+condition outputs on and were pre-trained with the same context size and the same article titles and
+subtitles were used as prompts for each model. However, we also ran an experiment to control for
+participant effort and attention that followed the same format but involved intentionally bad model
+generated articles. This was done by generating articles from a “control model”: a 160M parameter
+model with no context and increased output randomness.
+Mean human accuracy (the ratio of correct assignments to non-neutral assignments per participant) at
+detecting that the intentionally bad articles were model generated was ∼ 86% where 50% is chance
+level performance. By contrast, mean human accuracy at detecting articles that were produced by the
+175B parameter model was barely above chance at ∼ 52% (see Table 7.3).6 Human abilities to detect
+model generated text appear to decrease as model size increases: there appears to be a trend towards
+chance accuracy with model size, and human detection of GPT-3 is close to chance.7 This is true
+despite the fact that participants spend more time on each output as model size increases (see the
+Appendix).
+Examples of synthetic articles from GPT-3 are given in Figures 7.4 and 7.5.
+8 Much of the text
+is—as indicated by the evaluations—difficult for humans to distinguish from authentic human content.
+Factual inaccuracies can be an indicator that an article is model generated since, unlike human authors,
+the models have no access to the specific facts that the article titles refer to or when the article was
+written. Other indicators include repetition, non sequiturs, and unusual phrasings, though these are
+often subtle enough that they are not noticed.
+Related work on language model detection by Ippolito et al. [IDCBE19] indicates that automatic
+discriminators like G R O V E R [ZHR+19] and GLTR [GSR19] may have greater success at detecting
+model generated text than human evaluators. Automatic detection of these models may be a promising
+area of future research.
+Ippolito et al. [IDCBE19] also note that human accuracy at detecting model generated text increases
+as humans observe more tokens. To do a preliminary investigation of how good humans are at
+detecting longer news articles generated by GPT-3 175B, we selected 12 world news articles from
+Reuters with an average length of 569 words and generated completions of these articles from GPT-3
+with an average length of 498 words (298 words longer than our initial experiments). Following the
+methodology above, we ran two experiments, each on around 80 US-based participants, to compare
+human abilities to detect the articles generated by GPT-3 and a control model.
+We found that mean human accuracy at detecting the intentionally bad longer articles from the control
+model was ∼ 88%, while mean human accuracy at detecting the longer articles that were produced
+by GPT-3 175B was still barely above chance at ∼ 52% (see Table 7.4). This indicates that, for news
+articles that are around 500 words long, GPT-3 continues to produce articles that humans find difficult
+to distinguish from human written news articles.

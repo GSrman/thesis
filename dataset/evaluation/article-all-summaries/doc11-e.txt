@@ -1,0 +1,25 @@
+**Ethical Aspects Discussed in Abstract: None specifically mentioned.**
+
+
+**Notes on Ethics from Introduction and Conclusion:**
+
+- **Privacy:** Not directly discussed, but character-level analysis might process sensitive texts which
+require privacy considerations.
+
+- **Bias and Fairness:** Potential bias in language models due to dataset composition is implicit; fair use
+across languages must be considered given the application to different languages.
+ Writers or researchers should ensure that their datasets are not biased towards particular demographics or
+linguistic groups.
+
+- **Transparency:** The abstract implies a need for transparency in methodology and model interpretability,
+especially when dealing with language processing tasks where understanding the decision process is crucial.
+
+- **Dual Use:** Not directly mentioned, but ConvNets could be applied to sensitive or harmful applications;
+thus, dual use considerations are implied.
+
+- **Accessibility:** The simplification of engineering by using character-level features suggests an aim
+towards broader accessibility across languages and potentially different skill levels in understanding the
+models' operation.
+
+- **Data Collection:** Large-scale datasets were created, indicating that ethical data collection practices
+are assumed to be followed during dataset creation.

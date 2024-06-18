@@ -1,0 +1,12 @@
+Bias and fairness:
+The paper doesn't explicitly discuss bias and fairness.
+Privacy:
+The paper doesn't discuss privacy concerns.
+Transparency:
+The authors promise to make their code, data, and models publicly available, enhancing transparency.
+Dual Use:
+The paper doesn't address dual-use implications.
+Accessibility:
+The availability of code, models, and data to the public promotes accessibility.
+Data collection:
+The paper mentions training on 2.5 TB of CommonCrawl data, but doesn't delve into data collection methodologies.

@@ -1,0 +1,7 @@
+Ethical Aspect	Discussed
+Bias and fairness	Not discussed
+Privacy	Mentioned in the context of sensitive data
+Transparency	Not discussed
+Dual Use	Not discussed
+Accessibility	Not discussed
+Data collection	Mentioned in the context of ethics review and sensitive data

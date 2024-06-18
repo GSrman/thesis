@@ -1,0 +1,65 @@
+For the following research paper segments, make a short bulletpoint summary of the following ethical aspects: Bias and fairness, Privacy, Transparency, Dual Use, Accessibility, Data collection. If an aspect is not discussed, say so.
+
+Abstract
+We introduce a new type of deep contextualized word representation that models both (1)
+complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses
+vary across linguistic contexts (i.e., to model
+polysemy). Our word vectors are learned functions of the internal states of a deep bidirectional language model (biLM), which is pretrained on a large text corpus. We show that
+these representations can be easily added to
+existing models and significantly improve the
+state of the art across six challenging NLP
+problems, including question answering, textual entailment and sentiment analysis. We
+also present an analysis showing that exposing
+the deep internals of the pre-trained network is
+crucial, allowing downstream models to mix
+different types of semi-supervision signals.
+ Introduction
+Pre-trained word representations (Mikolov et al.,
+2013; Pennington et al., 2014) are a key component in many neural language understanding models. However, learning high quality representations can be challenging. They should ideally
+model both (1) complex characteristics of word
+use (e.g., syntax and semantics), and (2) how these
+uses vary across linguistic contexts (i.e., to model
+polysemy). In this paper, we introduce a new type
+of deep contextualized word representation that
+directly addresses both challenges, can be easily
+integrated into existing models, and significantly
+improves the state of the art in every considered
+case across a range of challenging language understanding problems.
+Our representations differ from traditional word
+type embeddings in that each token is assigned a
+representation that is a function of the entire input
+sentence. We use vectors derived from a bidirectional LSTM that is trained with a coupled language model (LM) objective on a large text corpus. For this reason, we call them ELMo (Embeddings from Language Models) representations.
+Unlike previous approaches for learning contextualized word vectors (Peters et al., 2017; McCann
+et al., 2017), ELMo representations are deep, in
+the sense that they are a function of all of the internal layers of the biLM. More specifically, we
+learn a linear combination of the vectors stacked
+above each input word for each end task, which
+markedly improves performance over just using
+the top LSTM layer.
+Combining the internal states in this manner allows for very rich word representations. Using intrinsic evaluations, we show that the higher-level
+LSTM states capture context-dependent aspects
+of word meaning (e.g., they can be used without modification to perform well on supervised
+word sense disambiguation tasks) while lowerlevel states model aspects of syntax (e.g., they can
+be used to do part-of-speech tagging). Simultaneously exposing all of these signals is highly beneficial, allowing the learned models select the types
+of semi-supervision that are most useful for each
+end task.
+Extensive experiments demonstrate that ELMo
+representations work extremely well in practice.
+We first show that they can be easily added to
+existing models for six diverse and challenging
+language understanding problems, including textual entailment, question answering and sentiment
+analysis. The addition of ELMo representations
+alone significantly improves the state of the art
+in every case, including up to 20% relative error
+reductions. For tasks where direct comparisons
+are possible, ELMo outperforms CoVe (McCann
+et al., 2017), which computes contextualized representations using a neural machine translation encoder. Finally, an analysis of both ELMo and
+CoVe reveals that deep representations outperform
+those derived from just the top layer of an LSTM.
+Our trained models and code are publicly available, and we expect that ELMo will provide similar gains for many other NLP problems.1
+Conclusion
+We have introduced a general approach for learning high-quality deep context-dependent representations from biLMs, and shown large improvements when applying ELMo to a broad range of
+NLP tasks. Through ablations and other controlled
+experiments, we have also confirmed that the
+biLM layers efficiently encode different types of
+syntactic and semantic information about wordsin-context, and that using all layers improves overall task performance.

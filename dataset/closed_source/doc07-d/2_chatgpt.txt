@@ -1,0 +1,6 @@
+Bias and fairness: Not discussed.
+Privacy: Not discussed.
+Transparency: The paper provides a detailed explanation of the LSTM architecture and its application in sequence-to-sequence learning, giving insights into how the model works.
+Dual Use: Not discussed.
+Accessibility: The approach is described as relatively simple and straightforward, suggesting potential accessibility to researchers and practitioners in the field.
+Data collection: Not discussed.

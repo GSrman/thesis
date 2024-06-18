@@ -1,0 +1,6 @@
+Bias and fairness: Not discussed.
+Privacy: Not discussed.
+Transparency: The paper provides detailed explanations of the proposed model architecture and its components, offering transparency in the approach.
+Dual Use: Not discussed.
+Accessibility: The paper introduces a novel neural network architecture for statistical machine translation, which could potentially enhance accessibility to translation services.
+Data collection: Not discussed.

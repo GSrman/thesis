@@ -1,0 +1,93 @@
+For the following research paper segments, make a short bulletpoint summary of the following ethical aspects: Bias and fairness, Privacy, Transparency, Dual Use, Accessibility, Data collection. If an aspect is not discussed, say so.
+
+Abstract
+In this paper, we propose a novel neural network model called RNN Encoder–
+Decoder that consists of two recurrent
+neural networks (RNN). One RNN encodes a sequence of symbols into a fixedlength vector representation, and the other
+decodes the representation into another sequence of symbols. The encoder and decoder of the proposed model are jointly
+trained to maximize the conditional probability of a target sequence given a source
+sequence. The performance of a statistical machine translation system is empirically found to improve by using the conditional probabilities of phrase pairs computed by the RNN Encoder–Decoder as an
+additional feature in the existing log-linear
+model. Qualitatively, we show that the
+proposed model learns a semantically and
+syntactically meaningful representation of
+linguistic phrases.
+Introduction
+Deep neural networks have shown great success in
+various applications such as objection recognition
+(see, e.g., (Krizhevsky et al., 2012)) and speech
+recognition (see, e.g., (Dahl et al., 2012)). Furthermore, many recent works showed that neural networks can be successfully used in a number of tasks in natural language processing (NLP).
+These include, but are not limited to, language
+modeling (Bengio et al., 2003), paraphrase detection (Socher et al., 2011) and word embedding extraction (Mikolov et al., 2013). In the field of statistical machine translation (SMT), deep neural
+networks have begun to show promising results.
+(Schwenk, 2012) summarizes a successful usage
+of feedforward neural networks in the framework
+of phrase-based SMT system.
+Along this line of research on using neural networks for SMT, this paper focuses on a novel neural network architecture that can be used as a part
+of the conventional phrase-based SMT system.
+The proposed neural network architecture, which
+we will refer to as an RNN Encoder–Decoder, consists of two recurrent neural networks (RNN) that
+act as an encoder and a decoder pair. The encoder maps a variable-length source sequence to a
+fixed-length vector, and the decoder maps the vector representation back to a variable-length target
+sequence. The two networks are trained jointly to
+maximize the conditional probability of the target
+sequence given a source sequence. Additionally,
+we propose to use a rather sophisticated hidden
+unit in order to improve both the memory capacity
+and the ease of training.
+The proposed RNN Encoder–Decoder with a
+novel hidden unit is empirically evaluated on the
+task of translating from English to French. We
+train the model to learn the translation probability of an English phrase to a corresponding French
+phrase. The model is then used as a part of a standard phrase-based SMT system by scoring each
+phrase pair in the phrase table. The empirical evaluation reveals that this approach of scoring phrase
+pairs with an RNN Encoder–Decoder improves
+the translation performance.
+We qualitatively analyze the trained RNN
+Encoder–Decoder by comparing its phrase scores
+with those given by the existing translation model.
+The qualitative analysis shows that the RNN
+Encoder–Decoder is better at capturing the linguistic regularities in the phrase table, indirectly
+explaining the quantitative improvements in the
+overall translation performance. The further analysis of the model reveals that the RNN Encoder–
+Decoder learns a continuous space representation
+of a phrase that preserves both the semantic and
+syntactic structure of the phrase.
+Conclusion
+In this paper, we proposed a new neural network
+architecture, called an RNN Encoder–Decoder
+that is able to learn the mapping from a sequence
+of an arbitrary length to another sequence, possibly from a different set, of an arbitrary length. The
+proposed RNN Encoder–Decoder is able to either
+score a pair of sequences (in terms of a conditional
+probability) or generate a target sequence given a
+source sequence. Along with the new architecture,
+we proposed a novel hidden unit that includes a reset gate and an update gate that adaptively control
+how much each hidden unit remembers or forgets
+while reading/generating a sequence.
+We evaluated the proposed model with the task
+of statistical machine translation, where we used
+the RNN Encoder–Decoder to score each phrase
+pair in the phrase table. Qualitatively, we were
+able to show that the new model is able to capture linguistic regularities in the phrase pairs well
+and also that the RNN Encoder–Decoder is able to
+propose well-formed target phrases.
+The scores by the RNN Encoder–Decoder were
+found to improve the overall translation performance in terms of BLEU scores. Also, we
+found that the contribution by the RNN Encoder–
+Decoder is rather orthogonal to the existing approach of using neural networks in the SMT system, so that we can improve further the performance by using, for instance, the RNN Encoder–
+Decoder and the neural net language model together.
+Our qualitative analysis of the trained model
+shows that it indeed captures the linguistic regularities in multiple levels i.e. at the word level as
+well as phrase level. This suggests that there may
+be more natural language related applications that
+may benefit from the proposed RNN Encoder–
+Decoder.
+The proposed architecture has large potential
+for further improvement and analysis. One approach that was not investigated here is to replace the whole, or a part of the phrase table by
+letting the RNN Encoder–Decoder propose target
+phrases. Also, noting that the proposed model is
+not limited to being used with written language,
+it will be an important future research to apply the
+proposed architecture to other applications such as
+speech transcription.

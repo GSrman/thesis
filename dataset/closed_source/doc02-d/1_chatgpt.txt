@@ -1,0 +1,6 @@
+Bias and fairness: Not discussed.
+Privacy: Not discussed.
+Transparency: The paper is transparent about the model architecture and training process, providing details on how the Transformer model functions and how it compares to existing models.
+Dual Use: Not discussed.
+Accessibility: The code used for training and evaluation of the models is provided on GitHub, enhancing accessibility for other researchers to replicate and build upon the work.
+Data collection: Not discussed.

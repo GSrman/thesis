@@ -1,0 +1,26 @@
+Bias and Fairness:
+- Not explicitly discussed in the provided abstract or introduction.
+
+Privacy:
+- No mention of privacy concerns within the context of LSTM networks,
+Tree-LSTMs, or related tasks.
+
+Transparency:
+- The paper does not discuss transparency as it relates to their
+research on LSTM and Tree-LSTM models.
+
+Dual Use:
+- Not discussed in the provided abstract or introduction; however,
+generally speaking, neural network applications can have dual uses
+which would need to be considered ethically.
+
+Accessibility:  Written Abstract not discusses accessibility but
+typically includes considerations such as if research is openly
+available and understandable for diverse audiences.
+
+Data Collection:
+- The paper discusses the use of datasets like SemEval Task 1 and
+Stanford Sentiment Treebank for evaluating Tree-LSTM models,
+indicating data collection methods but does not detail ethical
+considerations surrounding this process in the provided abstract or
+introduction.

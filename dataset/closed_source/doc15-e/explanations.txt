@@ -1,0 +1,3 @@
+Rank 1 has ethical aspects found and no verbose texts surrounding the bulletlist.
+Rank 2 has ethical aspects found, but has verbose texts surrounding the bulletlist.
+Rank 3 is lacking ethical aspects, and is too short at points.

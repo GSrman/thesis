@@ -1,0 +1,21 @@
+Bias and fairness:
+
+Not explicitly discussed.
+Privacy:
+
+Not explicitly discussed.
+Transparency:
+
+Provides transparency regarding the architecture and functioning of the Tree-LSTM model.
+Offers clarity on model evaluation and comparison with existing systems.
+Provides access to implementations and experiments on GitHub for further scrutiny.
+Dual Use:
+
+Not explicitly discussed.
+Accessibility:
+
+Provides open access to implementations and experiments on GitHub.
+Enables further research and exploration of the proposed Tree-LSTM architecture.
+Data collection:
+
+Not explicitly discussed.

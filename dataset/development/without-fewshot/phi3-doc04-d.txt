@@ -1,0 +1,11 @@
+The document discusses the potential biases and challenges in large
+language models (LLMs) such as GPT-3 and their implications on various
+aspects like energy usage, generation of news articles, societal
+impacts, and fairness. It also presents an experiment demonstrating
+that humans struggle to distinguish between model generated articles
+and human written articles, especially when the article size increases
+from 200 words to around 569 words with GPT-3 175B. This difficulty in
+discrimination suggests a challenge in ensinasing societal impacts of
+these models at scale due to their ability to generate realistic
+content that is difficult for humans to distinguish as machine
+generated.

@@ -1,0 +1,11 @@
+Bias and fairness: Not discussed.
+
+Privacy: Not discussed.
+
+Transparency: The model is trained on jointly-trained monolingual and cross-lingual objectives. The specific details of the algorithm are provided in the paper.
+
+Dual Use: Not discussed.
+
+Accessibility: The paper mentions that the model can be applied to different types of parallel corpora and non-parallel documents, making it potentially more accessible than previous methods.
+
+Data collection: The paper mentions that the model can be trained on label/class-aligned non-parallel documents, which are widely available. This could raise privacy concerns depending on the nature of the labels/classes.

@@ -1,0 +1,15 @@
+The provided text is a detailed excerpt discussing the ability of
+humans to discern between articles created by language models and
+those composed by humans. This study involves creating artificial news
+pieces using various sized language models, including GPT-3, and
+testing their realism through human evaluation. The findings suggest
+that as model size increases, the difficulty for humans in
+distinguishing generated text from human-written content also rises.
+In particular, accuracy drops close to chance levels with larger
+models like a 175B parameter version of GPT-3. This effect persists
+even for longer news articles (approximately 500 words), as the
+experiment showed that humans' detection abilities barely exceeded
+random guessing in this context too. The study implies potential areas
+of future research, such as the development of automatic
+discriminators to improve text generation quality assessment and human
+detection of model-generated content.

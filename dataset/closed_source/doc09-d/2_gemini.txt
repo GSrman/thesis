@@ -1,0 +1,8 @@
+Based on the provided snippets of the research paper, here's a bulleted summary of the ethical aspects discussed:
+
+Bias and Fairness: Not discussed.
+Privacy: Not discussed.
+Transparency: The paper mentions making the code, data, and models publicly available.
+Dual Use: Not discussed.
+Accessibility: The paper mentions the model's potential to improve low-resource language understanding, making NLP more accessible to a wider range of languages.
+Data Collection: The paper mentions using filtered CommonCrawl data, but it doesn't discuss details about the filtering process or potential biases within the data.

@@ -1,0 +1,27 @@
+1. Ethical Aspect: Bias and Fairness
+   - Analyzed in ACL 2021 papers, discussing potential biases in Natural Language Processing (NLP)
+applications.
+   - Observed differences between tracks, with some actively addressing fairness concerns.
+   - Types of ethical questions: How bias is addressed and mitigated within NLP research.
+
+2. Ethical Aspect: Privacy
+   - Explored in ACL 2021 papers' ECSs, highlighting the importance of data privacy and secure handling of
+sensitive information.
+
+3. Ethical Aspect: Transparency
+   - Mentioned in various ECSs within ACL 2021 proceedings, emphasizing the need for clear communication
+about NLP models' capabilities and limitations.
+
+4. Ethical Aspect: Dual Use (Note: This aspect was not discussed explicitly in the provided abstract.)
+   - No specific mention or observation regarding dual use concerns within ACL 2021 papers.
+
+5. Ethical Aspect: Accessibility
+   - Not directly addressed in the abstract; however, it is a potential area for future consideration based
+on related research and discussions.
+
+6. Ethical Aspect: Data Collection
+   - Implicitly discussed through broader ethical considerations concerning sensitive data usage within NLP
+applications.
+
+The provided text does not directly mention privacy, transparency, dual use, accessibility, or the handling
+of vulnerable groups affected by potential harms in the ACL 2021 papers' ECSs.

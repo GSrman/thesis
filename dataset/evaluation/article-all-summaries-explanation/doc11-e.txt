@@ -1,0 +1,19 @@
+**Bias and Fairness:** Not explicitly addressed in the abstract or introduction.
+
+**Privacy:** No mention of data privacy concerns within the provided segments.
+ Writers should consider ethical guidelines to ensure user privacy during model training and
+deployment.
+
+**Transparency:** The paper discusses the use of character-level convolutional networks
+(ConvNets) for text classification, but does not delve into transparency issues regarding how
+these models operate or make decisions.
+
+**Dual Use:** No specific discussion on dual-use implications in the provided abstract and
+introduction. However, as with any AI technology, there's potential for misuse that should be
+acknowledged by researchers.
+
+**Accessibility:** Not directly addressed, but character-level ConvNets could potentially improve
+model accessibility across different languages due to not requiring word segmentation.
+
+**Data Collection:** The authors mention building several large-scale datasets but do not discuss
+the ethics of data collection such as consent or representation diversity.

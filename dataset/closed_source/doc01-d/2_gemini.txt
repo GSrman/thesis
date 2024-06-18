@@ -1,0 +1,7 @@
+Ethical Aspect	Discussion in the Paper
+Bias and fairness	Not discussed
+Privacy	Not discussed
+Transparency	The paper discusses methods for visualizing how neural models work, but does not explicitly address transparency in the sense of bias or fairness.
+Dual Use	Not discussed
+Accessibility	Not discussed
+Data collection	Not discussed

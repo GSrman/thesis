@@ -1,0 +1,3 @@
+Rank 1 has more precize summaries.
+Rank 2 has less precize summaries.
+Rank 3 has verbose texts surrounding the bulletlist.

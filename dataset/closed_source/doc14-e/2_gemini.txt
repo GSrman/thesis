@@ -1,0 +1,7 @@
+Ethical Aspects in the Research Paper:
+Bias and Fairness: Not discussed.
+Privacy: Not discussed, though the paper mentions using "large monolingual corpora". It's unclear if any privacy considerations are taken for the data used.
+Transparency: The paper describes the methodology in detail, including the use of adversarial training and unsupervised selection metrics. The code and embeddings are publicly available.
+Dual Use: Not explicitly discussed, but the paper mentions the potential application for unsupervised machine translation. This technology could be used for both beneficial and malicious purposes.
+Accessibility: The paper mentions releasing high-quality dictionaries for multiple languages, improving accessibility to cross-lingual communication.
+Data Collection: The paper mentions using large monolingual corpora but doesn't discuss how the data is collected or if user consent is involved.

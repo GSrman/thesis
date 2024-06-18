@@ -1,0 +1,11 @@
+This paper introduces an innovative model capable of generating cross-lingual word embeddinas
+without relying on any parallel corpora or annotated data, outperforming several supervised
+methods in various evaluation tasks. The technique employs adversarial training and a two-step
+process to learn a linear mapping between source and target spaces, creating high-quality
+dictionaries for diverse language pairs. Key contributions include an unsupervised selection
+metric correlating with the quality of alignment, advancements in cross-domain similarity
+adaptation to counteract the hubness problem, and performance on English-Esperanto low-resource
+pair indicating suitability for such scenarios. The method is validated across multiple tasks
+showing parity or superiority compared to supervised approaches while addressing challenges faced
+by similar unsupervised methods, providing a robust foundation for future cross-lingual learning
+research.

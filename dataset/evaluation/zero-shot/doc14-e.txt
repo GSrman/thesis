@@ -1,0 +1,28 @@
+**Bias and Fairness:** The paper's approach does not explicitly
+address bias or fairness in the cross-lingual embeddings generated;
+however, by using monolingual corpora from diverse sources, it
+indirectly promotes data diversity which could contribute to more
+equitable representations.
+
+
+**Privacy:** There is no direct mention of privacy concerns within
+this paper's methodology as the shared dictionary and embeddings are
+publicly released for research purposes.
+
+
+**Transparency:** The authors release dictionaries and word
+embeddings, which indicates a level of transparency in their process.
+They also describe each step of their approach, contributing to their
+overall transparency.
+
+
+**Accessibility:** By making the dictionary and word embeddings
+publicly available for 12 language pairs, this paper improves
+accessibility for researchers working with low-resource languages or
+those interested in cross-lingual analysis.
+
+
+**Data Access:** The approach relies on monolingual datasets from each
+language without using any additional parallel corpora, thus it does
+not directly address data access issues but circumvents the need for
+expensive and often scarce cross-lingual resources.

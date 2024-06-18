@@ -1,0 +1,17 @@
+**Ethical Aspects Summary:**
+
+- Bias and Fairness: The research does not explicitly discuss bias or fairness, but evaluating
+Tree-LSTM models on diverse datasets could mitigate potential biases.
+
+- Privacy: No information provided about privacy concerns in the paper.
+
+- Transparency: While tree structures are described to improve transparency over linear chains,
+no direct discussion of model interpretability or transparency is made.
+ Writes on Dual Use: The paper does not address potential dual uses of the Tree-LSTM models.
+
+- Accessibility: No mention of accessibility issues in terms of making the technology available
+to a broader audience or ensuring its fair application across different demographics.
+
+- Data Collection: As with previous RNNs, it is implied that ethical data collection practices
+were likely followed during model training and evaluation; however, specific details are not
+provided within this abstract.

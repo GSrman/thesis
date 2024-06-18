@@ -1,0 +1,65 @@
+For the following research paper segments, make a short bulletpoint summary of the following ethical aspects: Bias and fairness, Privacy, Transparency, Dual Use, Accessibility, Data collection. If an aspect is not discussed, say so. 
+
+Abstract
+While neural networks have been successfully applied to many NLP tasks the resulting vector-based models are very difficult to interpret. For example it’s not clear
+how they achieve compositionality, building sentence meaning from the meanings
+of words and phrases. In this paper we
+describe strategies for visualizing compositionality in neural models for NLP, inspired
+by similar work in computer vision. We
+first plot unit values to visualize compositionality of negation, intensification, and
+concessive clauses, allowing us to see wellknown markedness asymmetries in negation. We then introduce methods for visualizing a unit’s salience, the amount that it
+contributes to the final composed meaning
+from first-order derivatives. Our generalpurpose methods may have wide applications for understanding compositionality
+and other semantic properties of deep networks.
+1 Introduction
+Neural models match or outperform the performance of other state-of-the-art systems on a variety of NLP tasks. Yet unlike traditional featurebased classifiers that assign and optimize weights
+to varieties of human interpretable features (partsof-speech, named entities, word shapes, syntactic
+parse features etc) the behavior of deep learning
+models is much less easily interpreted. Deep learning models mainly operate on word embeddings
+(low-dimensional, continuous, real-valued vectors)
+through multi-layer neural architectures, each layer
+of which is characterized as an array of hidden neuron units. It is unclear how deep learning models
+deal with composition, implementing functions like
+negation or intensification, or combining meaning
+from different parts of the sentence, filtering away
+the informational chaff from the wheat, to build
+sentence meaning.
+In this paper, we explore multiple strategies to
+interpret meaning composition in neural models.
+We employ traditional methods like representation
+plotting, and introduce simple strategies for measuring how much a neural unit contributes to meaning
+composition, its ‘salience’ or importance using first
+derivatives.
+Visualization techniques/models represented in
+this work shed important light on how neural models work: For example, we illustrate that LSTM’s
+success is due to its ability in maintaining a much
+sharper focus on the important key words than other
+models; Composition in multiple clauses works
+competitively, and that the models are able to capture negative asymmetry, an important property
+of semantic compositionally in natural language
+understanding; there is sharp dimensional locality, with certain dimensions marking negation and
+quantification in a manner that was surprisingly
+localist. Though our attempts only touch superficial points in neural models, and each method has
+its pros and cons, together they may offer some
+insights into the behaviors of neural models in language based tasks, marking one initial step toward
+understanding how they achieve meaning composition in natural language processing.
+The next section describes some visualization
+models in vision and NLP that have inspired this
+work. We describe datasets and the adopted neural models in Section 3. Different visualization
+strategies and correspondent analytical results are
+presented separately in Section 4,5,6, followed by
+a brief conclusion.
+7 Conclusion
+In this paper, we offer several methods to help
+visualize and interpret neural models, to understand
+how neural models are able to compose meanings,
+demonstrating asymmetries of negation and explain
+some aspects of the strong performance of LSTMs
+at these tasks.
+Though our attempts only touch superficial
+points in neural models, and each method has its
+pros and cons, together they may offer some insights into the behaviors of neural models in language based tasks, marking one initial step toward
+understanding how they achieve meaning composition in natural language processing. Our future
+work includes using results of the visualization be
+used to perform error analysis, and understanding
+strengths limitations of different neural models.

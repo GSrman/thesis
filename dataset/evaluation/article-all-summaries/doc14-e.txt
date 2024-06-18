@@ -1,0 +1,30 @@
+The paper presented offers an innovative approach to align word embeddimation spaces between languages using
+only monolingual corpora without relying on cross-lingual annotated data or supervised methods. This method
+is significant for computational linguistics and language technology, particularly in the field of Natural
+Language Processing (NLP), where machine translation and multilingual understanding are critical areas of
+research.
+
+The proposed method introduces an unsupervised adversarial training procedure that leverages a linear
+mapping between source and target spaces while extracting synthetic dictionaries from shared embeddings,
+which can then be fine-tuned with the Procrustes solution for enhanced performance on various tasks
+including word translation, sentence retrieval, and cross-lingual word similarity.
+
+Key contributions include:
+1. Unsupervised approach reaching or surpassing state-of-the-art supervised methods in several language
+pairs and evaluation tasks.
+2. Introducing a cross-domain similarity adaptation to mitigate the hubness problem, leading to improved
+absolute performance on word translation benchmarks.
+3. Proposing an unsupervised criterion correlated with mapping quality for model selection and stopping
+criteria.
+4. Releasing high-quality dictionaries and embeddings for multiple language pairs.
+5. Demonstrating effectiveness on low-resource languages where parallel corpora are not available.
+
+The paper is organized into sections, each detailing various aspects of the proposed method, from the
+unsupervised adversarial training approach to model selection and performance results across different tasks
+and language pairs. In conclusion, this work proves that it is possible to align word embeddings without
+cross-lingual supervision while achieving competitive or superior outcomes compared to existing supervised
+methods.
+
+Overall, the paper contributes significantly to the field of computational linguistics by providing a robust
+unsupervised approach for learning language mappings and facilitating advancements in machine translation
+and multilingual NLP applications.

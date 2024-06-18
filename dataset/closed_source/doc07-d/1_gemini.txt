@@ -1,0 +1,7 @@
+Ethical Aspects in the Research Paper:
+Bias and Fairness: Not discussed.
+Privacy: Not discussed.
+Transparency: The inner workings of the LSTM model are explained including its architecture and training process.
+Dual Use: Not discussed explicitly, but the paper focuses on machine translation which has beneficial applications.
+Accessibility: Not discussed.
+Data Collection: The paper mentions training on a large English to French translation dataset (WMT'14) but does not discuss details of data collection or potential biases in the data.

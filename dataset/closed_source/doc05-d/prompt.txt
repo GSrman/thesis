@@ -1,0 +1,95 @@
+For the following research paper segments, make a short bulletpoint summary of the following ethical aspects: Bias and fairness, Privacy, Transparency, Dual Use, Accessibility, Data collection. If an aspect is not discussed, say so.
+
+Abstract
+In many languages, sparse availability of resources causes numerous challenges for textual analysis tasks. Text classification is one of
+such standard tasks that is hindered due to limited availability of label information in lowresource languages. Transferring knowledge
+(i.e. label information) from high-resource to
+low-resource languages might improve text
+classification as compared to the other approaches like machine translation. We introduce BRAVE (Bilingual paRAgraph VEctors),
+a model to learn bilingual distributed representations (i.e. embeddings) of words without word alignments either from sentencealigned parallel or label-aligned non-parallel
+document corpora to support cross-language
+text classification. Empirical analysis shows
+that classification models trained with our
+bilingual embeddings outperforms other stateof-the-art systems on three different crosslanguage text classification tasks.
+ Introduction
+The availability of language-specific annotated resources is crucial for the efficiency of natural language processing tasks. Still, many languages lack
+rich annotated resources that support various tasks
+such as part-of-speech tagging, dependency parsing
+and text classification. While the growth of multilingual information on the web has provided an opportunity to build these missing annotated resources,
+but still lots of manual effort is required to achieve
+high quality resources for every language separately.
+Another possibility is to utilize the unlabeled
+data present in those languages or transfer knowledge from annotation-rich languages. For the
+first alternative, recent advancements made in
+learning monolingual distributed representations of
+words (Mikolov et al., 2013a; Pennington et al.,
+2014; Levy and Goldberg, 2014) (i.e. monolingual word embeddings) capturing syntactic and semantic information in an unsupervised manner was
+useful in numerous NLP tasks (Collobert et al.,
+2011). However, this may not be sufficient for
+several other tasks such as cross-language information retrieval (Grefenstette, 2012), cross-language
+word semantic similarity (Vulic and Moens, 2014), ´
+cross-language text classification (CLTC, henceforth) (Klementiev et al., 2012; Xiao and Guo, 2013;
+Prettenhofer and Stein, 2010; Tang and Wan, 2014)
+and machine translation (Zhao et al., 2015) due to
+irregularities across languages. In these kind of scenarios, transfer of knowledge can be useful.
+Several approaches (Hermann and Blunsom,
+2014; Sarath Chandar et al., 2014; Gouws et al.,
+2015; Coulmance et al., 2015) tried to induce
+monolingual distributed representations into a language independent space (i.e. bilingual or multilingual word embeddings) by jointly training on pair
+of languages. Although the overall goal of these
+approaches is to capture linguistic regularities in
+words that share same semantic and syntactic space
+across languages, they differ in their implementation. One set of methods either perform offline
+alignment of trained monolingual embeddings or
+jointly-train both monolingual and cross-lingual objectives, while the other set uses only cross-lingual
+objective. Jointly-trained or offline alignment methods can be further divided based on the type of par-
+allel corpus (e.g. word-aligned, sentence-aligned)
+they use for learning the cross-lingual objective. Table 1 summarizes different setups to learn bilingual
+or multilingual embeddings for the various tasks.
+Methods in the Table 1 that use word-aligned
+parallel corpus as offline alignment (Mikolov et
+al., 2013b; Faruqui and Dyer, 2014) assume single correspondence between the words across languages and ignore polysemy. While, the jointlytrain methods (Klementiev et al., 2012) that use
+word-alignment parallel corpus and consider polysemy perform computationally expensive operation
+of considering all possible interactions between the
+pairs of words in vocabulary of two different languages. Methods (Hermann and Blunsom, 2014;
+Sarath Chandar et al., 2014) that overcame the
+complexity issues of word-aligned models by using sentence-aligned parallel corpora limits themselves to only cross-lingual objective, thus making these approaches unable to explore monolingual corpora. Jointly-trained models (Gouws et al.,
+2015; Coulmance et al., 2015) overcame the issues
+of both word-aligned and purely cross-lingual objective models by using monolingual and sentencealigned parallel corpora. Nonetheless, these approaches still have certain drawbacks such as usage of only bag-of-words from the parallel sentences ignoring order of words. Thus, they are
+missing to capture the non-compositional meaning
+of entire sentence. Also, learned bilingual embeddings were heavily biased towards the sampled
+sentence-aligned parallel corpora. It is also sometimes hard to acquire sentence-level parallel corpora
+for every language pair. To subdue this concern,
+few approaches (Rajendran et al., 2015) used pivot
+languages like English or comparable documentaligned corpora (Vulic and Moens, 2015) to learn ´
+bilingual embeddings specific to only one task.
+This major downside can be observed in other
+aforementioned methods also, which are inflexible
+to handle different types of parallel corpora and
+have a tight-binding between cross-lingual objectives and the parallel corpora. For example, a
+method using sentence-level parallel corpora cannot be altered to leverage document-level parallel
+corpora (if available) that might have better performance for some tasks. Also, none of the approaches do leverage widely available label/classaligned non-parallel documents (e.g. sentiment labels, multi-class datasets) across languages which
+share special semantics such as sentiment or correlation between concepts as opposed to parallel texts.
+In this paper, we introduce BRAVE a jointlytrained flexible model that learns bilingual embeddings based on the availability of the type of corpora (e.g. sentence-aligned parallel or label/classaligned non-parallel document) by just altering the
+cross-lingual objective. BRAVE leverages paragraph vector embeddings (Le and Mikolov, 2014)
+of the monolingual corpora to effectively conceal
+semantics of the text sequences across languages
+and build a cross-lingual objective. Method closely
+related to our approach is by Pham et al. (2015)
+who uses shared context sentence vector across lan-
+guages to learn multilingual text sequences.
+The main contributions of this paper are:
+• We jointly train monolingual part of parallel
+corpora with the improved cross-lingual alignment function that extends beyond bag-of-word
+models.
+• Introduced a novel approach to leverage nonparallel data sets such as label or class aligned
+documents in different languages for learning
+bilingual cues.
+• Experimental evaluation on three different
+CLTC tasks, namely cross-language document classification, multi-label classification
+and cross-language sentiment classification using learned bilingual word embeddings.
+Conclusion and Future Work
+In this paper, we presented an approach that leverages paragraph vectors to learn bilingual word embeddings with sentence-aligned parallel and labelaligned non-parallel corpora. Empirical analysis exhibited that embeddings learned from both of these
+types of corpora have shown good impact on CLTC
+tasks. In future, we aim to extend the approach
+to learn multilingual semantic spaces with more labels/classes.

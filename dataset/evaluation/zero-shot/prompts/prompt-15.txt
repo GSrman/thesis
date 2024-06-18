@@ -1,0 +1,103 @@
+For the following research paper segments, make a short bulletpoint summary of the following ethical aspects: Bias and fairness, Privacy, Transparency, Dual Use, Accessibility, Data collection. If an aspect is not discussed, say so.
+
+Abstract
+In this paper we present the results of a manual
+classification of all ethical consideration sections for ACL 2021. We also compare how
+many papers had an ethics consideration section per track and per world region in ACL
+2021. We classified papers according to the
+ethical issues covered (research benefits, potential harms, and vulnerable groups affected)
+and whether the paper was marked as requiring
+ethics review by at least one reviewer. Moreover, we discuss recurring obstacles we have
+observed (highlighting some interesting texts
+we found along the way) and conclude with
+three suggestions. We think that this paper may
+be useful for anyone who needs to write — or
+review — an ethics section and would like to
+get an overview of what others have done.
+ Introduction
+The first conference of the Association for Computational Linguistics (ACL) to include an ethics
+advisory committee was the one organized by its
+North American Chapter (NAACL) in 2021. Since
+then all ACL conferences have had one, including
+all chapter conferences, and the largest conferences
+ACL-IJCNLP and EMNLP. The ACL 2021 webpage call for papers says the following.1
+Authors will be allowed extra space after the
+8th page for a broader impact statement or
+other discussion of ethics. Note that though the
+ethical consideration paragraph is not mandatory, authors of papers working with sensitive
+data or on sensitive tasks that do not sufficiently
+discuss these issues may receive a conditional
+acceptance recommendation.
+This paper examines the current state of the NLP
+research community’s discussion of the ethical impact of its work, as reflected in its publications. We
+first pose five empirical questions, and then explore
+possible obstacles to the discussion. The paper is
+organized as follows. Section 2 briefly reviews related work, giving references relevant to several
+areas of NLP. In Section 3 we explore the following five questions regarding ethical consideration
+sections in ACL 2021 papers:
+• What percentage of papers include an ethical
+considerations section (ECS)?
+• Are there some tracks that stand out, either
+positively or negatively?
+• What types of ethical questions are addressed
+in ECSs, and in what proportion?
+• Are the papers with ECSs that went through
+ethics review different from those that did not?
+• Are there differences between countries with
+respect to the ECSs?
+In Section 4 we consider obstacles that may impede the discussion of ethical issues in research
+papers, and how they might be overcome. In Section 5 we propose three concrete suggestions that
+can be useful in the future for authors, reviewers
+and ethics chairs. After the conclusions in Section 6 we discuss the ethical considerations and the
+limitations of this work.
+Conclusions
+We believe our paper may be useful for authors
+writing an ethics section — and perhaps even for
+reviewers of such sections — who would like to get
+an overview of what others have done, including
+what might be addressed (benefits, harms, vulnerable groups).
+This paper provides a dive into the contents of
+ethical consideration sections (ECS) in ACL proceedings papers from last year. Specifically, the
+paper compares the percentages of papers containing ECS from different countries and the contents
+of these ECS. We also discuss the types of obstacles facing ECS writers, and provide concrete
+suggestions for authors, reviewers, and organizers.
+We wrote this paper because we think it is important to inspire the community to think about
+the social impacts of their work. We value diverse
+perspectives — so we do not supply cut-and-dried
+solutions to the issues we raise. Rather, we have
+tried to make ethical discussions more meaningful
+by drawing attention to what has already been done
+in ECSs. The statistics we reported are simple and
+basic, and doubtless more detailed analyses will
+be made as more data becomes available. But our
+main goal here was to raise these issues clearly and
+directly — and as soon as possible — to the NLP
+community.
+Ethical considerations
+Ethics reviewing in NLP was first implemented in
+June 2021 for NAACL 2021. In this paper we addressed the following questions about papers published at ACL 2021 in August 2021. 1) What percentage of papers include an ethical considerations
+section (ECS)? 2) Are there some tracks that stand
+out, either positively or negatively? 3) What types
+of ethical questions are addressed in ECSs, and in
+what proportion? 4) Are the papers with ECSs that
+went through ethics review different from those that
+did not? 5) Are there differences between countries with respect to the ECSs?. We also describe
+common obstacles and arguments regarding ECSs
+and illustrate papers that have overcome them insightfully. Potential harms of our paper include
+over-generalizations of the empirical results we
+show here so we want to make our limitations explicit and we do so in the next section. One of our
+reviewers pointed out that a potential harm is that
+this paper raises opinions about the Ethics Consideration Section, which is to some extent sensitive,
+and that may affect the point of view of other authors toward ECS. To this we can only say: trying
+to raise awareness and stimulate open discussion
+of ECSs in the NLP community seems better than
+leaving them unexamined..
+We believe this paper might benefit NLP researchers who are authors, reviewers or conference
+organizers in different ways. Authors might find
+in this paper tools to come up with better ECSs.
+Ethics reviewers might see the impact of their effort.
+And organizers could have a glimpse at questions
+addressed and not addressed by ECSs. Our goal
+is to contribute to the ongoing debate on what is
+the current situation of the broader societal impact
+discussions of NLP research.

@@ -1,0 +1,221 @@
+For the following research paper segments, make a short bulletpoint summary of the following ethical aspects: Bias and fairness, Privacy, Transparency, Dual Use, Accessibility, Data collection. If an aspect is not discussed, say so.
+I have included a example from a different research paper first. It has three different summaries, which are ranked in order from best to worst. You do not need to make a summary on this paper, it is just an example.
+
+Abstract
+This paper shows that pretraining multilingual
+language models at scale leads to significant
+performance gains for a wide range of crosslingual transfer tasks. We train a Transformerbased masked language model on one hundred
+languages, using more than two terabytes of filtered CommonCrawl data. Our model, dubbed
+XLM-R, significantly outperforms multilingual
+BERT (mBERT) on a variety of cross-lingual
+benchmarks, including +14.6% average accuracy on XNLI, +13% average F1 score on
+MLQA, and +2.4% F1 score on NER. XLM-R
+performs particularly well on low-resource languages, improving 15.7% in XNLI accuracy
+for Swahili and 11.4% for Urdu over previous XLM models. We also present a detailed
+empirical analysis of the key factors that are
+required to achieve these gains, including the
+trade-offs between (1) positive transfer and capacity dilution and (2) the performance of high
+and low resource languages at scale. Finally,
+we show, for the first time, the possibility of
+multilingual modeling without sacrificing perlanguage performance; XLM-R is very competitive with strong monolingual models on the
+GLUE and XNLI benchmarks. We will make
+our code, data and models publicly available.1
+ Introduction
+The goal of this paper is to improve cross-lingual
+language understanding (XLU), by carefully studying the effects of training unsupervised crosslingual representations at a very large scale. We
+present XLM-R a transformer-based multilingual
+masked language model pre-trained on text in 100
+languages, which obtains state-of-the-art performance on cross-lingual classification, sequence labeling and question answering.
+∗Equal contribution.
+Correspondence to {aconneau,kartikayk}@fb.com
+1
+https://github.com/facebookresearch/(fairseq-py,pytext,xlm)
+Multilingual masked language models (MLM)
+like mBERT (Devlin et al., 2018) and XLM (Lample and Conneau, 2019) have pushed the stateof-the-art on cross-lingual understanding tasks
+by jointly pretraining large Transformer models (Vaswani et al., 2017) on many languages.
+These models allow for effective cross-lingual
+transfer, as seen in a number of benchmarks including cross-lingual natural language inference
+(Bowman et al., 2015; Williams et al., 2017; Conneau et al., 2018), question answering (Rajpurkar
+et al., 2016; Lewis et al., 2019), and named entity recognition (Pires et al., 2019; Wu and Dredze,
+2019). However, all of these studies pre-train on
+Wikipedia, which provides a relatively limited scale
+especially for lower resource languages.
+In this paper, we first present a comprehensive
+analysis of the trade-offs and limitations of multilingual language models at scale, inspired by recent monolingual scaling efforts (Liu et al., 2019).
+We measure the trade-off between high-resource
+and low-resource languages and the impact of language sampling and vocabulary size. The experiments expose a trade-off as we scale the number
+of languages for a fixed model capacity: more languages leads to better cross-lingual performance
+on low-resource languages up until a point, after
+which the overall performance on monolingual and
+cross-lingual benchmarks degrades. We refer to
+this tradeoff as the curse of multilinguality, and
+show that it can be alleviated by simply increasing model capacity. We argue, however, that this
+remains an important limitation for future XLU
+systems which may aim to improve performance
+with more modest computational budgets.
+Our best model XLM-RoBERTa (XLM-R) outperforms mBERT on cross-lingual classification by
+up to 23% accuracy on low-resource languages. It
+outperforms the previous state of the art by 5.1% average accuracy on XNLI, 2.42% average F1-score
+on Named Entity Recognition, and 9.1% average
+F1-score on cross-lingual Question Answering. We
+also evaluate monolingual fine tuning on the GLUE
+and XNLI benchmarks, where XLM-R obtains results competitive with state-of-the-art monolingual
+models, including RoBERTa (Liu et al., 2019).
+These results demonstrate, for the first time, that
+it is possible to have a single large model for all
+languages, without sacrificing per-language performance. We will make our code, models and data
+publicly available, with the hope that this will help
+research in multilingual NLP and low-resource language understanding.
+Conclusion
+In this work, we introduced XLM-R, our new state
+of the art multilingual masked language model
+trained on 2.5 TB of newly created clean CommonCrawl data in 100 languages. We show that it
+provides strong gains over previous multilingual
+models like mBERT and XLM on classification,
+sequence labeling and question answering. We exposed the limitations of multilingual MLMs, in
+particular by uncovering the high-resource versus
+low-resource trade-off, the curse of multilinguality
+and the importance of key hyperparameters. We
+also expose the surprising effectiveness of multilingual models over monolingual models, and show
+strong improvements on low-resource languages.
+
+For these research paper segments, the following summaries were generated, in order from best to worst.
+
+1.
+Bias and fairness:
+The paper doesn't explicitly discuss bias and fairness.
+Privacy:
+The paper doesn't discuss privacy concerns.
+Transparency:
+The authors promise to make their code, data, and models publicly available, enhancing transparency.
+Dual Use:
+The paper doesn't address dual-use implications.
+Accessibility:
+The availability of code, models, and data to the public promotes accessibility.
+Data collection:
+The paper mentions training on 2.5 TB of CommonCrawl data, but doesn't delve into data collection methodologies.
+
+2.
+Based on the provided snippets of the research paper, here's a bulleted summary of the ethical aspects discussed:
+
+Bias and Fairness: Not discussed.
+Privacy: Not discussed.
+Transparency: The paper mentions making the code, data, and models publicly available.
+Dual Use: Not discussed.
+Accessibility: The paper mentions the model's potential to improve low-resource language understanding, making NLP more accessible to a wider range of languages.
+Data Collection: The paper mentions using filtered CommonCrawl data, but it doesn't discuss details about the filtering process or potential biases within the data.
+
+3.
+Certainly! Let’s summarize the ethical aspects discussed in the research paper “Unsupervised Cross-lingual Representation Learning at Scale” (XLM-R) based on the provided segments:
+
+Bias and Fairness:
+The paper does not explicitly discuss bias and fairness.
+Privacy:
+The paper does not explicitly discuss privacy concerns related to cross-lingual representation learning.
+Transparency:
+The paper does not explicitly discuss transparency aspects.
+Dual Use:
+The paper does not explicitly discuss dual-use implications of XLM-R.
+Accessibility:
+The paper does not explicitly discuss accessibility considerations.
+Data Collection:
+The paper mentions training XLM-R on more than two terabytes of filtered CommonCrawl data from one hundred languages.
+However, it does not delve into specific data collection practices or ethical considerations related to data sources.
+In summary, while the paper provides valuable insights into cross-lingual representation learning, it does not extensively address the ethical aspects mentioned above1. If you have any further questions or need additional information, feel free to ask! 😊
+
+This is the end of the examples. I repeat the task for you here below.
+For the following research paper segments, make a short bulletpoint summary of the following ethical aspects: Bias and fairness, Privacy, Transparency, Dual Use, Accessibility, Data collection. If an aspect is not discussed, say so.
+
+Abstract
+In many languages, sparse availability of resources causes numerous challenges for textual analysis tasks. Text classification is one of
+such standard tasks that is hindered due to limited availability of label information in lowresource languages. Transferring knowledge
+(i.e. label information) from high-resource to
+low-resource languages might improve text
+classification as compared to the other approaches like machine translation. We introduce BRAVE (Bilingual paRAgraph VEctors),
+a model to learn bilingual distributed representations (i.e. embeddings) of words without word alignments either from sentencealigned parallel or label-aligned non-parallel
+document corpora to support cross-language
+text classification. Empirical analysis shows
+that classification models trained with our
+bilingual embeddings outperforms other stateof-the-art systems on three different crosslanguage text classification tasks.
+ Introduction
+The availability of language-specific annotated resources is crucial for the efficiency of natural language processing tasks. Still, many languages lack
+rich annotated resources that support various tasks
+such as part-of-speech tagging, dependency parsing
+and text classification. While the growth of multilingual information on the web has provided an opportunity to build these missing annotated resources,
+but still lots of manual effort is required to achieve
+high quality resources for every language separately.
+Another possibility is to utilize the unlabeled
+data present in those languages or transfer knowledge from annotation-rich languages. For the
+first alternative, recent advancements made in
+learning monolingual distributed representations of
+words (Mikolov et al., 2013a; Pennington et al.,
+2014; Levy and Goldberg, 2014) (i.e. monolingual word embeddings) capturing syntactic and semantic information in an unsupervised manner was
+useful in numerous NLP tasks (Collobert et al.,
+2011). However, this may not be sufficient for
+several other tasks such as cross-language information retrieval (Grefenstette, 2012), cross-language
+word semantic similarity (Vulic and Moens, 2014), ´
+cross-language text classification (CLTC, henceforth) (Klementiev et al., 2012; Xiao and Guo, 2013;
+Prettenhofer and Stein, 2010; Tang and Wan, 2014)
+and machine translation (Zhao et al., 2015) due to
+irregularities across languages. In these kind of scenarios, transfer of knowledge can be useful.
+Several approaches (Hermann and Blunsom,
+2014; Sarath Chandar et al., 2014; Gouws et al.,
+2015; Coulmance et al., 2015) tried to induce
+monolingual distributed representations into a language independent space (i.e. bilingual or multilingual word embeddings) by jointly training on pair
+of languages. Although the overall goal of these
+approaches is to capture linguistic regularities in
+words that share same semantic and syntactic space
+across languages, they differ in their implementation. One set of methods either perform offline
+alignment of trained monolingual embeddings or
+jointly-train both monolingual and cross-lingual objectives, while the other set uses only cross-lingual
+objective. Jointly-trained or offline alignment methods can be further divided based on the type of par-
+allel corpus (e.g. word-aligned, sentence-aligned)
+they use for learning the cross-lingual objective. Table 1 summarizes different setups to learn bilingual
+or multilingual embeddings for the various tasks.
+Methods in the Table 1 that use word-aligned
+parallel corpus as offline alignment (Mikolov et
+al., 2013b; Faruqui and Dyer, 2014) assume single correspondence between the words across languages and ignore polysemy. While, the jointlytrain methods (Klementiev et al., 2012) that use
+word-alignment parallel corpus and consider polysemy perform computationally expensive operation
+of considering all possible interactions between the
+pairs of words in vocabulary of two different languages. Methods (Hermann and Blunsom, 2014;
+Sarath Chandar et al., 2014) that overcame the
+complexity issues of word-aligned models by using sentence-aligned parallel corpora limits themselves to only cross-lingual objective, thus making these approaches unable to explore monolingual corpora. Jointly-trained models (Gouws et al.,
+2015; Coulmance et al., 2015) overcame the issues
+of both word-aligned and purely cross-lingual objective models by using monolingual and sentencealigned parallel corpora. Nonetheless, these approaches still have certain drawbacks such as usage of only bag-of-words from the parallel sentences ignoring order of words. Thus, they are
+missing to capture the non-compositional meaning
+of entire sentence. Also, learned bilingual embeddings were heavily biased towards the sampled
+sentence-aligned parallel corpora. It is also sometimes hard to acquire sentence-level parallel corpora
+for every language pair. To subdue this concern,
+few approaches (Rajendran et al., 2015) used pivot
+languages like English or comparable documentaligned corpora (Vulic and Moens, 2015) to learn ´
+bilingual embeddings specific to only one task.
+This major downside can be observed in other
+aforementioned methods also, which are inflexible
+to handle different types of parallel corpora and
+have a tight-binding between cross-lingual objectives and the parallel corpora. For example, a
+method using sentence-level parallel corpora cannot be altered to leverage document-level parallel
+corpora (if available) that might have better performance for some tasks. Also, none of the approaches do leverage widely available label/classaligned non-parallel documents (e.g. sentiment labels, multi-class datasets) across languages which
+share special semantics such as sentiment or correlation between concepts as opposed to parallel texts.
+In this paper, we introduce BRAVE a jointlytrained flexible model that learns bilingual embeddings based on the availability of the type of corpora (e.g. sentence-aligned parallel or label/classaligned non-parallel document) by just altering the
+cross-lingual objective. BRAVE leverages paragraph vector embeddings (Le and Mikolov, 2014)
+of the monolingual corpora to effectively conceal
+semantics of the text sequences across languages
+and build a cross-lingual objective. Method closely
+related to our approach is by Pham et al. (2015)
+who uses shared context sentence vector across lan-
+guages to learn multilingual text sequences.
+The main contributions of this paper are:
+• We jointly train monolingual part of parallel
+corpora with the improved cross-lingual alignment function that extends beyond bag-of-word
+models.
+• Introduced a novel approach to leverage nonparallel data sets such as label or class aligned
+documents in different languages for learning
+bilingual cues.
+• Experimental evaluation on three different
+CLTC tasks, namely cross-language document classification, multi-label classification
+and cross-language sentiment classification using learned bilingual word embeddings.
+Conclusion and Future Work
+In this paper, we presented an approach that leverages paragraph vectors to learn bilingual word embeddings with sentence-aligned parallel and labelaligned non-parallel corpora. Empirical analysis exhibited that embeddings learned from both of these
+types of corpora have shown good impact on CLTC
+tasks. In future, we aim to extend the approach
+to learn multilingual semantic spaces with more labels/classes.

@@ -1,0 +1,19 @@
+Bias and Fairness:
+
+Not explicitly discussed.
+Privacy:
+
+Not explicitly discussed.
+Transparency:
+
+The paper is transparent about the methodology used in generating the contextualized word representations (ELMo).
+The authors provide details about the training process and how ELMo can be integrated into existing models.
+Dual Use:
+
+Not discussed.
+Accessibility:
+
+The trained models and code are made publicly available, enhancing accessibility to the research findings and methods.
+Data Collection:
+
+Not discussed.

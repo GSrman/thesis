@@ -1,0 +1,3 @@
+Rank 1 is clear.
+Rank 2 has a too verbose way of saying that an aspect was not mentioned.
+Rank 3 has a lot of verbose texts surrounding the bulletlist.

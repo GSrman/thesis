@@ -1,0 +1,12 @@
+Bias and fairness:
+Not discussed.
+Privacy:
+Not discussed.
+Transparency:
+The paper aims to offer methods for visualizing and interpreting neural models, providing insights into how they compose meanings, although acknowledging limitations.
+Dual Use:
+Not discussed.
+Accessibility:
+The paper offers strategies for visualizing and interpreting neural models, potentially aiding accessibility to understanding how these models work in natural language processing tasks.
+Data collection:
+Not discussed.

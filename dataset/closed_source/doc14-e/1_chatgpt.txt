@@ -1,0 +1,6 @@
+Bias and fairness: Not discussed.
+Privacy: Not discussed.
+Transparency: The paper provides detailed descriptions of the methodology used, including adversarial training and the refinement procedure.
+Dual Use: Not discussed.
+Accessibility: The code, embeddings, and dictionaries are publicly available.
+Data collection: The method relies on two large monolingual corpora, one in the source and one in the target language, but it doesn't discuss the ethical implications or procedures regarding data collection.

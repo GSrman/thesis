@@ -1,0 +1,3 @@
+Rank 1 has no verbose texts surrounding the bulletlist.
+Rank 2 is lacking the point of Accessibility.
+Rank 3 has verbose texts surrounding the bulletlist and is lacking the point of Accessibility.
